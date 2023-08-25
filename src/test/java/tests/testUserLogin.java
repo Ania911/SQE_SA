@@ -1,7 +1,7 @@
 package tests;
 import dataProvider.DP;
 import org.testng.annotations.Test;
-import utils.Log;
+import sqe.example.uttility.Log;
 
 public class testUserLogin {
 

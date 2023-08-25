@@ -5,12 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b8a42de-fa6b-41d2-94db-bd0a72da76cc" name="Changes" comment="updates">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j2.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utils/Log.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sqe/example/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/testUserLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/testUserLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sqe/example/uttility/Log.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,15 +66,24 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;last_directory_selection&quot;: &quot;C:/Users/Anna_Sakiv/IdeaProjects/SQE_SA/src/test/java&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Anna_Sakiv/IdeaProjects/reportportal&quot;
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Anna_Sakiv/IdeaProjects/reportportal&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Anna_Sakiv\IdeaProjects\SQE_SA\src\main\java" />
       <recent name="C:\Users\Anna_Sakiv\IdeaProjects\SQE_SA" />
     </key>
   </component>
-  <component name="RunManager" selected="Maven.SQE_SA [surefire:test]">
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean test -Denv=qa" />
+    </option>
+  </component>
+  <component name="RunManager" selected="TestNG.testUserLogin.userLogin">
     <configuration name="SQE_SA [surefire:test]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -111,7 +119,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testUserLogin.myTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="testUserLogin" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SQE_SA" />
       <extension name="coverage">
         <pattern>
@@ -121,8 +129,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.testUserLogin" />
-      <option name="METHOD_NAME" value="myTest" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -167,11 +174,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.testUserLogin.userLogin" />
+        <item itemvalue="TestNG.testUserLogin" />
         <item itemvalue="Maven.SQE_SA [surefire:test]" />
         <item itemvalue="TestNG.C:/Users/Anna_Sakiv/IdeaProjects/SQE_SA/testng.xml" />
-        <item itemvalue="TestNG.testUserLogin.userLogin" />
         <item itemvalue="TestNG.testUserLogin.user" />
-        <item itemvalue="TestNG.testUserLogin.myTest" />
       </list>
     </recent_temporary>
   </component>
@@ -198,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692177665262</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="updates">
+      <created>1692775448747</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1692775448747</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
