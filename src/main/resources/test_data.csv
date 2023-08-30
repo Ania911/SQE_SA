@@ -1,0 +1,3 @@
+Username,Password,UserType,ExpectedResult
+default,1q2w3e,default,
+superadmin,erebus,admin,

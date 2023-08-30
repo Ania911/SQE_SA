@@ -43,6 +43,51 @@
             <version>2.20.0</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>5.3.1</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-chrome-driver</artifactId>
+            <version>4.11.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-support -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-support</artifactId>
+            <version>4.11.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.opencsv/opencsv -->
+        <dependency>
+            <groupId>com.opencsv</groupId>
+            <artifactId>opencsv</artifactId>
+            <version>5.8</version>
+        </dependency>
+        <dependency>
+            <groupId>net.sf.opencsv</groupId>
+            <artifactId>opencsv</artifactId>
+            <version>2.3</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jetbrains</groupId>
+            <artifactId>annotations</artifactId>
+            <version>RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.github.qsy7.java.modules.browser.drivers</groupId>
+            <artifactId>firefoxdriver</artifactId>
+            <version>0.1.2</version>
+        </dependency>
+
+
     </dependencies>
 
     <profiles>
@@ -57,28 +102,28 @@
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-surefire-plugin</artifactId>
                         <version>2.19.1</version>
-                                                <configuration>
-                                                    <testFailureIgnore>true</testFailureIgnore>
-                                                    <argLine>
-                                                        -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
-                                                    </argLine>
+                        <configuration>
+                            <testFailureIgnore>true</testFailureIgnore>
+                            <argLine>
+                                -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
+                            </argLine>
 
-                                                    <suiteXmlFiles>
-                                                        <suiteXmlFile>${suite.dir}${suite}.xml</suiteXmlFile>
-                                                    </suiteXmlFiles>
-                                                    <systemPropertyVariables>
+                            <suiteXmlFiles>
+                                <suiteXmlFile>${suite.dir}${suite}.xml</suiteXmlFile>
+                            </suiteXmlFiles>
+                            <systemPropertyVariables>
 
-                                                        <env.url>${env.url}</env.url>
-                                                    </systemPropertyVariables>
+                                <env.url>${env.url}</env.url>
+                            </systemPropertyVariables>
 
-                                                </configuration>
-                                                <dependencies>
-                                                    <dependency>
-                                                        <groupId>org.aspectj</groupId>
-                                                        <artifactId>aspectjweaver</artifactId>
-                                                        <version>1.9.2</version>
-                                                    </dependency>
-                                                </dependencies>
+                        </configuration>
+                        <dependencies>
+                            <dependency>
+                                <groupId>org.aspectj</groupId>
+                                <artifactId>aspectjweaver</artifactId>
+                                <version>1.9.2</version>
+                            </dependency>
+                        </dependencies>
                     </plugin>
                 </plugins>
             </build>
