@@ -2,8 +2,11 @@ package core.uttility;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+
+import java.time.Duration;
 
 public class WebDriverManager {
     private WebDriver driver;
@@ -12,6 +15,8 @@ public class WebDriverManager {
     public void setUp() {
         System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
         driver = new ChromeDriver();
+        // Initialize WebDriverWait with a timeout
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
 
     public WebDriver getDriver() {

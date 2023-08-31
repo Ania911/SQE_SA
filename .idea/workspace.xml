@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b8a42de-fa6b-41d2-94db-bd0a72da76cc" name="Changes" comment="task 3">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/dataProvider/DP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/dataProvider/DP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/test_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/test_data.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/uttility/WebDriverManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/uttility/WebDriverManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginScreen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/testUserLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/testUserLogin.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -183,9 +182,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.testUserLogin.testSignIn" />
+        <item itemvalue="TestNG.testUserLogin" />
         <item itemvalue="TestNG.testUserLogin.user" />
         <item itemvalue="TestNG.testUserLogin.userLogin" />
-        <item itemvalue="TestNG.testUserLogin" />
         <item itemvalue="TestNG.testHealthCheck.testHCheck" />
       </list>
     </recent_temporary>
@@ -227,8 +226,24 @@
       <option name="project" value="LOCAL" />
       <updated>1693421422048</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="task 3">
+      <option name="closed" value="true" />
+      <created>1693484260019</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1693484260019</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="executable:docker" />
+    <option featureType="dependencySupport" implementationName="java:org.seleniumhq.selenium:selenium-java" />
+    <option featureType="dependencySupport" implementationName="java:javax.persistence:javax.persistence-api" />
+    <option featureType="dependencySupport" implementationName="executable:kubectl" />
+    <option featureType="dependencySupport" implementationName="java:io.qameta.allure:allure-java-commons" />
+    <option featureType="dependencySupport" implementationName="java:javax.enterprise:cdi-api" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -246,5 +261,16 @@
     <MESSAGE value="updates" />
     <MESSAGE value="task 3" />
     <option name="LAST_COMMIT_MESSAGE" value="task 3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pages/LoginScreen.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
