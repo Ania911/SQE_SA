@@ -17,20 +17,20 @@ public class DP {
     @DataProvider(name = "userData")
     public Object[][] getUserData() {
         try {
-            CSVReader reader = new CSVReaderBuilder(new FileReader("test_data.csv")).withSkipLines(1).build();
+            CSVReader reader = new CSVReaderBuilder(new FileReader("src/main/resources/test_data.csv")).withSkipLines(1).build();
             List<String[]> userData = reader.readAll();
 
             Object[][] data = new Object[userData.size()][];
 
             for (int i = 0; i < userData.size(); i++) {
                 String[] row = userData.get(i);
-                data[i] = new Object[]{row[0], row[1], row[2], row[3]};
+                data[i] = new Object[]{row[0], row[1]};
             }
 
             return data;
         } catch (Exception e) {
             e.printStackTrace();
-            return null;
+            return new Object[0][0]; // Return an empty array if there's an exception
         }
     }
 

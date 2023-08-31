@@ -21,23 +21,12 @@ public class testUserLogin {
         driver = driverManager.getDriver();
         driver.get("http://localhost:8080/ui/#login");
     }
-    @Test(dataProvider = "userData")
-    public void testSignIn(String username, String password, String userType,  String expected) {
+    @Test(dataProvider = "userData", dataProviderClass = DP.class)
+    public void testSignIn(String username, String password) {
         // Fill in username and password fields
         driver.findElement(By.name("login")).sendKeys(username);
         driver.findElement(By.name("password")).sendKeys(password);
         driver.findElement(By.xpath("//button[contains(@class, 'bigButton__color-organish')]")).click();
-
-        // Implement assertions based on expected result
-        if (expected.equals("Success")) {
-            // Verify successful login
-        } else {
-            // Verify error message
-        }
-
-        // Clear fields for the next iteration
-        driver.findElement(By.id("username")).clear();
-        driver.findElement(By.id("password")).clear();
     }
 
     @Test(dataProvider = "userLogin", dataProviderClass = DP.class)

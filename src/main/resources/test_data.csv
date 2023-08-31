@@ -1,3 +1,3 @@
-Username,Password,UserType,ExpectedResult
-default,1q2w3e,default,
-superadmin,erebus,admin,
+Username,Password
+default,1q2w3e
+superadmin,erebus
