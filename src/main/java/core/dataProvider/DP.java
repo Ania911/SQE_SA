@@ -30,7 +30,8 @@ public class DP {
             return data;
         } catch (Exception e) {
             e.printStackTrace();
-            return new Object[0][0]; // Return an empty array if there's an exception
+            // Return an empty array if there's an exception
+            return new Object[0][0];
         }
     }
 

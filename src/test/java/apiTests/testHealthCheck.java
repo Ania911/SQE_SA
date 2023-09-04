@@ -13,7 +13,7 @@ import static org.hamcrest.Matchers.equalTo;
 public class testHealthCheck {
     private HealthCheck hc;
     @BeforeMethod
-    public void setUpClass() {
+    public void initializePage() {
         hc = new HealthCheck();
     }
     @Test

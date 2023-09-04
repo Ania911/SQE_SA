@@ -5,10 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b8a42de-fa6b-41d2-94db-bd0a72da76cc" name="Changes" comment="task 3">
+      <change afterPath="$PROJECT_DIR$/src/main/java/core/uttility/ElementChecker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/SettingsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/testGeneralSettings.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/uttility/WebDriverManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/uttility/WebDriverManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/configuration/Configs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/configuration/Configs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/dataProvider/DP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/dataProvider/DP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/apiTests/testHealthCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/apiTests/testHealthCheck.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/testUserLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/testUserLogin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +96,52 @@
       <command value="mvn clean test -Denv=qa" />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.testUserLogin.testSignIn">
+  <component name="RunManager" selected="TestNG.testGeneralSettings.testEditSettings">
+    <configuration name="C:/Users/Anna_Sakiv/IdeaProjects/SQE_SA/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SQE_SA" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testGeneralSettings.testEditSettings" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SQE_SA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.testGeneralSettings" />
+      <option name="METHOD_NAME" value="testEditSettings" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testHealthCheck" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SQE_SA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="apiTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="apiTests" />
+      <option name="MAIN_CLASS_NAME" value="apiTests.testHealthCheck" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="testHealthCheck.testHCheck" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SQE_SA" />
       <extension name="coverage">
@@ -108,7 +160,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testUserLogin" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="testUserLogin.testUserLogin" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SQE_SA" />
       <extension name="coverage">
         <pattern>
@@ -118,60 +170,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
       <option name="MAIN_CLASS_NAME" value="tests.testUserLogin" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="testUserLogin.testSignIn" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SQE_SA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.testUserLogin" />
-      <option name="METHOD_NAME" value="testSignIn" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="testUserLogin.user" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SQE_SA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.testUserLogin" />
-      <option name="METHOD_NAME" value="user" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="testUserLogin.userLogin" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SQE_SA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.testUserLogin" />
-      <option name="METHOD_NAME" value="userLogin" />
+      <option name="METHOD_NAME" value="testUserLogin" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -181,10 +180,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.testUserLogin.testSignIn" />
-        <item itemvalue="TestNG.testUserLogin" />
-        <item itemvalue="TestNG.testUserLogin.user" />
-        <item itemvalue="TestNG.testUserLogin.userLogin" />
+        <item itemvalue="TestNG.testGeneralSettings.testEditSettings" />
+        <item itemvalue="TestNG.testUserLogin.testUserLogin" />
+        <item itemvalue="TestNG.testHealthCheck" />
+        <item itemvalue="TestNG.C:/Users/Anna_Sakiv/IdeaProjects/SQE_SA/testng.xml" />
         <item itemvalue="TestNG.testHealthCheck.testHCheck" />
       </list>
     </recent_temporary>
@@ -234,7 +233,15 @@
       <option name="project" value="LOCAL" />
       <updated>1693484260019</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="task 3">
+      <option name="closed" value="true" />
+      <created>1693489808447</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1693489808447</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -261,16 +268,5 @@
     <MESSAGE value="updates" />
     <MESSAGE value="task 3" />
     <option name="LAST_COMMIT_MESSAGE" value="task 3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pages/LoginScreen.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

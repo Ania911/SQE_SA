@@ -5,7 +5,12 @@ public class Configs {
 
     // HealthCheck
     public final static String healthCheck = "http://localhost:8080";
-    public final static String loginScreen = "/ui/#login?";
+
+    // Login screen
+    public final static String loginPage = "http://localhost:8080/ui/#login?";
+
+    // Settings screen
+    public final static String settingsPage = "http://localhost:8080/ui/#superadmin_personal/settings/general";
 
 
 }
