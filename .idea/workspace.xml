@@ -5,16 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0b8a42de-fa6b-41d2-94db-bd0a72da76cc" name="Changes" comment="task 3">
-      <change afterPath="$PROJECT_DIR$/src/main/java/core/uttility/ElementChecker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/SettingsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/testGeneralSettings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/1604f8ae-5c34-4eeb-8b8f-830ea544e57f-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/30d205c0-97aa-4fde-b214-15d626349630-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/33c180a6-00d3-4654-82a1-9c35843688ec-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/4255d736-a37b-4727-aeb4-0facb497cdc7-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/4376f1b6-6be6-466e-ae9d-824ecba5deff-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/438006a2-e0cb-49c8-aa00-40aa2778913c-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/448a5ceb-37c2-4f01-957d-6f8a51987a49-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/570c55d6-2496-459e-9d8b-446691009109-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/90fce55c-0479-4dd4-82fa-141dbb0149eb-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/9e718aef-e0e2-4cec-a56f-ae470d3fa12b-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/aaaef8d5-c354-4749-9d77-89a57c29dd09-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/bc70b9e5-3610-450a-97e0-447ec58cb1e9-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/c2868e07-2bf3-4e86-8f9c-f792eff20e1c-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/c8e2f2d7-8b2b-4f3f-8d97-7d52f52b3b7d-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/cfd43e4d-0c37-4281-9742-a76f112851d7-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/ed0d1c67-7359-444f-bb8b-a5300692f642-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/f8e9e974-ae14-4f99-b580-367e1dc1ec37-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/DashboardPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/testCRUDDashboard.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/configuration/Configs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/configuration/Configs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/dataProvider/DP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/dataProvider/DP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/apiTests/testHealthCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/apiTests/testHealthCheck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/testUserLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/testUserLogin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,24 +68,27 @@
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2U1MNqiZEye3DHmDTQEFIFsPial" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_directory_selection&quot;: &quot;C:/Users/Anna_Sakiv/IdeaProjects/SQE_SA/src/test/java&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Anna_Sakiv/Downloads/ml-llm-232.9826.zip&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_directory_selection": "C:/Users/Anna_Sakiv/IdeaProjects/SQE_SA/src/test/java",
+    "last_opened_file_path": "C:/Users/Anna_Sakiv/Downloads/ml-llm-232.9826.zip",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Anna_Sakiv\IdeaProjects\SQE_SA\src\main\resources" />
@@ -96,7 +109,7 @@
       <command value="mvn clean test -Denv=qa" />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.testGeneralSettings.testEditSettings">
+  <component name="RunManager" selected="TestNG.testCRUDDashboard.testEditDashboard">
     <configuration name="C:/Users/Anna_Sakiv/IdeaProjects/SQE_SA/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SQE_SA" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
@@ -107,7 +120,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testGeneralSettings.testEditSettings" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="testCRUDDashboard.testDeleteDashboard" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SQE_SA" />
       <extension name="coverage">
         <pattern>
@@ -116,61 +129,78 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.testGeneralSettings" />
+      <option name="MAIN_CLASS_NAME" value="tests.testCRUDDashboard" />
+      <option name="METHOD_NAME" value="testDeleteDashboard" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testCRUDDashboard.testEddDashboard" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SQE_SA" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.testCRUDDashboard" />
+      <option name="METHOD_NAME" value="testEddDashboard" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2" />
+    </configuration>
+    <configuration name="testCRUDDashboard.testEditDashboard" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SQE_SA" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.testCRUDDashboard" />
+      <option name="METHOD_NAME" value="testEditDashboard" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2" />
+    </configuration>
+    <configuration name="testCRUDDashboard.testEditSettings" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SQE_SA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.testCRUDDashboard" />
       <option name="METHOD_NAME" value="testEditSettings" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="testHealthCheck" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SQE_SA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="apiTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="apiTests" />
-      <option name="MAIN_CLASS_NAME" value="apiTests.testHealthCheck" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="testHealthCheck.testHCheck" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SQE_SA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="apiTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="apiTests" />
-      <option name="MAIN_CLASS_NAME" value="apiTests.testHealthCheck" />
-      <option name="METHOD_NAME" value="testHCheck" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="testUserLogin.testUserLogin" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SQE_SA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.testUserLogin" />
-      <option name="METHOD_NAME" value="testUserLogin" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -180,11 +210,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.testGeneralSettings.testEditSettings" />
-        <item itemvalue="TestNG.testUserLogin.testUserLogin" />
-        <item itemvalue="TestNG.testHealthCheck" />
+        <item itemvalue="TestNG.testCRUDDashboard.testEditDashboard" />
+        <item itemvalue="TestNG.testCRUDDashboard.testEddDashboard" />
+        <item itemvalue="TestNG.testCRUDDashboard.testDeleteDashboard" />
+        <item itemvalue="TestNG.testCRUDDashboard.testEditSettings" />
         <item itemvalue="TestNG.C:/Users/Anna_Sakiv/IdeaProjects/SQE_SA/testng.xml" />
-        <item itemvalue="TestNG.testHealthCheck.testHCheck" />
       </list>
     </recent_temporary>
   </component>
@@ -241,7 +271,15 @@
       <option name="project" value="LOCAL" />
       <updated>1693489808447</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="task 3">
+      <option name="closed" value="true" />
+      <created>1693817355210</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1693817355210</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -264,6 +302,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="first commit" />
     <MESSAGE value="updates" />
     <MESSAGE value="task 3" />
