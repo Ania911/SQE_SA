@@ -11,12 +11,15 @@ import java.time.Duration;
 public class WebDriverManager {
     private WebDriver driver;
 
-    @BeforeClass
+//    Cross browsers (String browsers) +if/else
+//    capabilities- screen res
+// https://bonigarcia.dev/webdrivermanager/ - setup chrome driver
+//    @BeforeClass
     public void setUp() {
         System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
         driver = new ChromeDriver();
         // Initialize WebDriverWait with a timeout
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
     }
 
     public WebDriver getDriver() {
@@ -30,7 +33,7 @@ public class WebDriverManager {
         }
     }
 
-    @AfterClass
+//    @AfterClass
     public void tearDown(){
         driver.quit();
     }

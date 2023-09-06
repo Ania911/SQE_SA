@@ -1,0 +1,22 @@
+# Selenium Configuration
+selenium:
+  browser: chrome # web browser (e.g., chrome, firefox)
+  webDriverPath: src/main/resources/chromedriver.exe # Path to WebDriver executable
+
+# Rest Assured Configuration
+restAssured:
+  baseURL: http://localhost:8080 # Base URL for your REST API endpoints
+  authentication:
+    username: default
+    password: 1q2w3e
+
+# Test Environment Configuration
+environment:
+  envName: QA # Name of the test environment
+  appUrl: http://localhost:8080 # URL of the application under test
+
+# Other Configuration Settings
+other_settings:
+  timeout: 30 # Default timeout for WebDriver operations
+  log_level: INFO # Logging level for your tests (e.g., INFO, DEBUG)
+

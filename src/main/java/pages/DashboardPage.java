@@ -1,5 +1,6 @@
 package pages;
 
+import core.configuration.Configs;
 import core.uttility.ElementChecker;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -26,8 +27,9 @@ public class DashboardPage {
         elementChecker = new ElementChecker(driver);
     }
 
-    public void clicksDashboards() {
-        driver.findElement(openDashboard).click();
+    public void openDashboards() {
+        driver.get(Configs.dashboardPage);
+//        driver.findElement(openDashboard).click();
     }
 
     public void addNewDashboard() {
@@ -60,7 +62,7 @@ public class DashboardPage {
 
 
     public void addNewDashboard(String dashboardName) {
-        clicksDashboards();
+        openDashboards();
         addNewDashboard();
         enterName(dashboardName);
         clicksSaveDashboard();
@@ -68,7 +70,7 @@ public class DashboardPage {
     }
 
     public void editDashboard(String name) {
-        clicksDashboards();
+        openDashboards();
         editDashboard();
         updateName(name);
         clickUpdateButton();
@@ -76,7 +78,7 @@ public class DashboardPage {
     }
 
     public void deleteDashboard() {
-        clicksDashboards();
+        openDashboards();
         clickDeleteDashboard();
         elementChecker.checkElementAndReport(successMessage, "No success message displayed");
     }

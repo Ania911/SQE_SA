@@ -1,5 +1,6 @@
 package pages;
 
+import core.configuration.Configs;
 import core.uttility.ElementChecker;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -19,7 +20,7 @@ public class SettingsPage {
     }
 
     public void clickSettingsButton() {
-        driver.findElement(settingsButton).click();
+      driver.findElement(settingsButton).click();
     }
 
     public void openDropDown() {
@@ -36,7 +37,7 @@ public class SettingsPage {
 
     // Get the currently selected option
     public void updateDataFromDropDown() {
-  //      clickSettingsButton();
+//       clickSettingsButton();
         openDropDown();
         dropDownOptions();
         clickSubmitButton();

@@ -1,5 +1,6 @@
 package pages;
 
+import core.configuration.Configs;
 import core.uttility.Log;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -14,12 +15,13 @@ public class LoginPage {
 
     public LoginPage(WebDriver driver) {
         this.driver = driver;
+        driver.get(Configs.loginPage);
     }
 
     public void enterUserName(String username) {
+//        wait
         driver.findElement(userName).sendKeys(username);
     }
-
     public void enterUserPass(String password) {
         driver.findElement(pass).sendKeys(password);
     }
@@ -27,7 +29,8 @@ public class LoginPage {
     public void clickLoginButton() {
         driver.findElement(loginButton).click();
     }
-
+//    Add new class
+//    Add into test ( Assert.assertEquals(actualTitle, expectedTitle, "Title mismatch");)
     public void userLogin(String username, String password) {
         Log.info("User log in to the app");
         enterUserName(username);

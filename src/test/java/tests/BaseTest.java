@@ -20,7 +20,7 @@ public class BaseTest {
 
     @BeforeMethod
     public void setUp() {
-        driver.get(Configs.loginPage);
+//        driver.get(Configs.loginPage);
         driver.get(Configs.settingsPage);
     }
 

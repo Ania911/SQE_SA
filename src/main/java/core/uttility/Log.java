@@ -5,6 +5,7 @@ import org.apache.logging.log4j.Logger;
 
 public class Log {
     //Initialize Log4j instance
+//    For the reports
     private static final Logger Log =  LogManager.getLogger(Log.class);
 
     //Info Level Logs
