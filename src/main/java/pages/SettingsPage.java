@@ -1,7 +1,7 @@
 package pages;
 
 import core.configuration.Configs;
-import core.uttility.ElementChecker;
+import core.assertion.ElementChecker;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -17,6 +17,7 @@ public class SettingsPage {
     public SettingsPage(WebDriver driver) {
         this.driver = driver;
         elementChecker = new ElementChecker(driver);
+        driver.get(Configs.settingsPage);
     }
 
     public void clickSettingsButton() {

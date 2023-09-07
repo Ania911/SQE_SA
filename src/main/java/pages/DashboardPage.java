@@ -1,7 +1,7 @@
 package pages;
 
 import core.configuration.Configs;
-import core.uttility.ElementChecker;
+import core.assertion.ElementChecker;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 

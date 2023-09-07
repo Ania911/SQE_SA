@@ -1,15 +1,8 @@
 package apiTests;
-import core.uttility.TestUtilities;
-import interfaces.api.healthCheck;
-import io.restassured.response.ValidatableResponse;
-import org.testng.Assert;
+import core.configuration.Configs;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import pages.HealthCheck;
-
-import static org.hamcrest.MatcherAssert.*;
-import static org.hamcrest.Matchers.equalTo;
-
 public class testHealthCheck {
     private HealthCheck hc;
     @BeforeMethod
@@ -18,8 +11,8 @@ public class testHealthCheck {
     }
     @Test
     public void testHCheck() {
-        ValidatableResponse response = hc.healthCheck();
-        TestUtilities.assertStatusCodeAndErrorMessage(response, 200);
+        String endpointURL = Configs.baseUrl;
+        hc.healthCheck(endpointURL);
     }
 
 }

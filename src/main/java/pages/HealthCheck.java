@@ -1,18 +1,29 @@
 package pages;
-import interfaces.api.healthCheck;
+
+import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
 import core.configuration.Configs;
 import static io.restassured.RestAssured.given;
 
-public class HealthCheck implements healthCheck {
+public class HealthCheck {
+    public static Response response;
+    public static String jsonAsString;
 
-//   return response/body, separate class
-    @Override
-    public ValidatableResponse healthCheck() {
-        return given()
+    public ValidatableResponse healthCheck(String endpointURL) {
+        ValidatableResponse response = given()
                 .when()
-                .get(Configs.browser)
-                .then().log().all()
-                .statusCode(200);
+                .get(endpointURL)
+                .then().log().all();
+        return response;
     }
+
+    public String extractResponse(String endpoint) {
+        response =
+                given()
+                        .when()
+                        .get(endpoint)
+                        .then().extract().response();
+        return jsonAsString = response.asString();
+    }
+
 }

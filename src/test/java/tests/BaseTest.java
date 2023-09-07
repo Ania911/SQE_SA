@@ -1,27 +1,17 @@
 package tests;
 
-import core.uttility.WebDriverManager;
-import org.openqa.selenium.WebDriver;
-import core.configuration.Configs;
+import core.uttility.WebDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.AfterMethod;
 
 public class BaseTest {
-    protected WebDriver driver;
+    protected org.openqa.selenium.WebDriver driver;
 
     @BeforeClass
     public void setUpClass() {
-        WebDriverManager driverManager = new WebDriverManager();
+        WebDriver driverManager = new WebDriver();
         driverManager.setUp();
         driver = driverManager.getDriver();
-    }
-
-    @BeforeMethod
-    public void setUp() {
-//        driver.get(Configs.loginPage);
-        driver.get(Configs.settingsPage);
     }
 
     @AfterTest

@@ -8,9 +8,10 @@ public class Configs {
 
     // Access configuration values
     public static final String browser = getString("selenium.browser");
-    public static final String baseUrl = getString("restAssured.base_url");
+    public static final String baseUrl = getString("restAssured.baseURL");
+    public static final String browserSize = getString("selenium.browserSize");
+    public final static String loginPage = getString("environment.loginPage");
 
-    // Define other configuration values similarly
 
     private static String getString(String key) {
         String[] keys = key.split("\\.");
@@ -27,10 +28,6 @@ public class Configs {
         }
         return value.toString();
     }
-
-
-    // Login screen
-    public final static String loginPage = "http://localhost:8080/ui/#login?";
 
     // Settings screen
     public final static String settingsPage = "http://localhost:8080/ui/#default_personal/settings/general";

@@ -1,7 +1,8 @@
 # Selenium Configuration
 selenium:
   browser: chrome # web browser (e.g., chrome, firefox)
-  webDriverPath: src/main/resources/chromedriver.exe # Path to WebDriver executable
+  browserSize: maximised
+
 
 # Rest Assured Configuration
 restAssured:
@@ -14,6 +15,7 @@ restAssured:
 environment:
   envName: QA # Name of the test environment
   appUrl: http://localhost:8080 # URL of the application under test
+  loginPage: http://localhost:8080/ui/#login?
 
 # Other Configuration Settings
 other_settings:
