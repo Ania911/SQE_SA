@@ -3,6 +3,13 @@ selenium:
   browser: chrome # web browser (e.g., chrome, firefox)
   browserSize: maximised
 
+# Users
+defaultUser:
+    username: default
+    password: 1q2w3e
+adminUser:
+    uname: default
+    pass: 1q2w3e
 
 # Rest Assured Configuration
 restAssured:

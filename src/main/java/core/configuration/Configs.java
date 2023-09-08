@@ -10,8 +10,10 @@ public class Configs {
     public static final String browser = getString("selenium.browser");
     public static final String baseUrl = getString("restAssured.baseURL");
     public static final String browserSize = getString("selenium.browserSize");
-    public final static String loginPage = getString("environment.loginPage");
 
+    public final static String loginPage = getString("environment.loginPage");
+    public final static String defaultUserName = getString("defaultUser.username");
+    public final static String defaultUserPass = getString("defaultUser.password");
 
     private static String getString(String key) {
         String[] keys = key.split("\\.");

@@ -1,23 +1,36 @@
 package tests;
+import core.assertion.Assertion;
+import core.pageActions.LoginPageActions;
+import core.pageActions.SettingPageActions;
+import locators.PageLocators;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import pages.LoginPage;
 import pages.SettingsPage;
 
 public class testGeneralSettings extends BaseTest {
-    private SettingsPage settings;
     private LoginPage loginPage;
+    private SettingsPage settings;
+    private LoginPageActions act;
+    private SettingPageActions sActions;
+    private Assertion assertion;
+    private PageLocators locators;
 
     @BeforeClass
     public void initializePage() {
-        settings = new SettingsPage(driver);
         loginPage = new LoginPage(driver);
+        act = new LoginPageActions(loginPage);
+      act.defaultUserLogin();
+        settings = new SettingsPage(driver);
+        sActions = new SettingPageActions(settings);
+        assertion= new Assertion(driver);
+        locators = new PageLocators();
     }
 
     @Test()
     public void testEditSettings() {
-        loginPage.userLogin("default", "1q2w3e");
-        settings.updateDataFromDropDown();
+        sActions.updateDataFromDropDown();
+        assertion.assertSuccessMessageByLocator(locators.successSettingUpdateMessage,"Project settings were successfully updated" );
     }
 
 }

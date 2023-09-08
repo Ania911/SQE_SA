@@ -6,13 +6,15 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class CommonActions {
+import java.time.Duration;
+
+public class CommonUIActions {
     private WebDriver driver;
     private WebDriverWait wait;
 
-    public CommonActions(WebDriver driver) {
+    public CommonUIActions(WebDriver driver) {
         this.driver = driver;
-        wait = new WebDriverWait(driver,10);
+        wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
 
     public void enterText(By locator, String text) {
