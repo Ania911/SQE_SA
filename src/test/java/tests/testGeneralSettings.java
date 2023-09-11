@@ -1,4 +1,5 @@
 package tests;
+
 import core.assertion.Assertion;
 import core.pageActions.LoginPageActions;
 import core.pageActions.SettingPageActions;
@@ -20,17 +21,17 @@ public class testGeneralSettings extends BaseTest {
     public void initializePage() {
         loginPage = new LoginPage(driver);
         act = new LoginPageActions(loginPage);
-      act.defaultUserLogin();
+        act.defaultUserLogin();
         settings = new SettingsPage(driver);
         sActions = new SettingPageActions(settings);
-        assertion= new Assertion(driver);
+        assertion = new Assertion(driver);
         locators = new PageLocators();
     }
 
     @Test()
     public void testEditSettings() {
         sActions.updateDataFromDropDown();
-        assertion.assertSuccessMessageByLocator(locators.successSettingUpdateMessage,"Project settings were successfully updated" );
+        assertion.assertSuccessMessageByLocator(locators.successSettingUpdateMessage, "Project settings were successfully updated", "Fail to update the project settings ");
     }
 
 }

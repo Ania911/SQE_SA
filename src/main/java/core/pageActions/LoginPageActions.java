@@ -2,13 +2,16 @@ package core.pageActions;
 
 import core.configuration.Configs;
 import core.uttility.Log;
+import org.apache.commons.lang.RandomStringUtils;
 import pages.LoginPage;
 
 public class LoginPageActions {
     private LoginPage loginPage;
+
     public LoginPageActions(LoginPage loginPage) {
         this.loginPage = loginPage;
     }
+
     public void userLogin(String username, String password) {
         Log.info("User log in to the app");
         loginPage.enterUserName(username);
@@ -23,6 +26,4 @@ public class LoginPageActions {
         loginPage.enterUserPass(userPass);
         loginPage.clickLoginButton();
     }
-
-
 }

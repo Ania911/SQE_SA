@@ -1,85 +1,50 @@
 package pages;
 
 import core.configuration.Configs;
-import core.assertion.ElementChecker;
-import org.openqa.selenium.By;
+import core.uttility.CommonUIActions;
+import locators.PageLocators;
 import org.openqa.selenium.WebDriver;
 
 public class DashboardPage {
     private WebDriver driver;
-    private ElementChecker elementChecker;
-
-
-    private By openDashboard = By.xpath(" //a[contains(@class, 'sidebarButton__nav-link--2TC0L') and contains(@href, '#default_personal/dashboard')]");
-    private By addDB = By.xpath("//span[@class = 'ghostButton__text--eUa9T']");
-    private By inputFieldName = By.xpath("//input[@class='input__input--3DC8i type-text variant-standard input__error--3ZvLE' and @placeholder='Enter dashboard name']");
-    private By updateField = By.xpath("//input[@placeholder='Enter dashboard name']");
-    private By addButton = By.xpath("//button[contains(@class, 'bigButton__big-button') and contains(@class, 'bigButton__color-booger')]");
-    private By editDB = By.xpath("//i[@class = 'icon__icon--2m6Od icon__icon-pencil--2-R6b']");
-    private By deleteDB = By.xpath("//i[@class = 'icon__icon--2m6Od icon__icon-delete--1jIHF']");
-    private By deleteButton = By.xpath("//button[@class = 'bigButton__big-button--ivY7j bigButton__color-tomato--Wvy5L']");
-    private By updateButton = By.xpath("//button[@class = 'bigButton__big-button--ivY7j bigButton__color-booger--2IfQT']']");
-    private By successMessage = By.xpath("//div[@class= 'notificationItem__message-container--16jY2 notificationItem__success--Xv97a']");
+    private CommonUIActions commonActions;
+    private PageLocators locators;
 
 
     public DashboardPage(WebDriver driver) {
         this.driver = driver;
-        elementChecker = new ElementChecker(driver);
-    }
-
-    public void openDashboards() {
         driver.get(Configs.dashboardPage);
-//        driver.findElement(openDashboard).click();
+        locators = new PageLocators();
+        commonActions = new CommonUIActions(driver);
     }
 
     public void addNewDashboard() {
-        driver.findElement(addDB).click();
+        commonActions.clickButton(locators.addDB);
     }
 
     public void enterName(String dashboardName) {
-        driver.findElement(inputFieldName).sendKeys(dashboardName);
+        commonActions.enterText(locators.inputFieldName, dashboardName);
     }
+
     public void updateName(String name) {
-        driver.findElement(updateField).sendKeys(name);
+        commonActions.enterText(locators.updateField, name);
     }
 
     public void clicksSaveDashboard() {
-        driver.findElement(addButton).click();
+        commonActions.clickButton(locators.addButton);
     }
 
     public void editDashboard() {
-        driver.findElement(editDB).click();
+        commonActions.clickButton(locators.editDB);
     }
 
     public void clickUpdateButton() {
-        driver.findElement(updateButton).click();
+        commonActions.clickButton(locators.updateButton);
     }
 
     public void clickDeleteDashboard() {
-        driver.findElement(deleteDB).click();
-        driver.findElement(deleteButton).click();
+        commonActions.clickButton(locators.deleteDB);
+        commonActions.clickButton(locators.deleteButton);
     }
 
-
-    public void addNewDashboard(String dashboardName) {
-        openDashboards();
-        addNewDashboard();
-        enterName(dashboardName);
-        clicksSaveDashboard();
-        elementChecker.checkElementAndReport(successMessage, "No success message displayed");
-    }
-
-    public void editDashboard(String name) {
-        openDashboards();
-        editDashboard();
-        updateName(name);
-        clickUpdateButton();
-        elementChecker.checkElementAndReport(successMessage, "No success message displayed");
-    }
-
-    public void deleteDashboard() {
-        openDashboards();
-        clickDeleteDashboard();
-        elementChecker.checkElementAndReport(successMessage, "No success message displayed");
-    }
 }

@@ -1,7 +1,7 @@
 # Selenium Configuration
 selenium:
-  browser: chrome # web browser (e.g., chrome, firefox)
-  browserSize: maximised
+  browser: firefox # web browser (e.g., chrome, firefox)
+  browserSize: maximized
 
 # Users
 defaultUser:

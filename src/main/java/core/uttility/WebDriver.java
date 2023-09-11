@@ -16,24 +16,26 @@ public class WebDriver {
 //         Get the browser configuration value from the config
         String browser = Configs.browser;
         String browserSize = Configs.browserSize;
-
+        try {
 //        Initialize the WebDriver based on the browser
-        if ("chrome".equalsIgnoreCase(browser)) {
+            if ("chrome".equalsIgnoreCase(browser)) {
 //            https://bonigarcia.dev/webdrivermanager/ - setup gecko driver
-            WebDriverManager.chromedriver().setup();
-            ChromeOptions chromeOptions = new ChromeOptions();
+                WebDriverManager.chromedriver().setup();
+                ChromeOptions chromeOptions = new ChromeOptions();
 //            Check the window screen
-            setScreenResolution(chromeOptions, browserSize);
-            driver = new ChromeDriver(chromeOptions);
-        } else if ("firefox".equalsIgnoreCase(browser)) {
-            WebDriverManager.firefoxdriver().setup();
-            FirefoxOptions firefoxOptions = new FirefoxOptions();
-            setScreenResolution(firefoxOptions, browserSize);
-            driver = new FirefoxDriver(firefoxOptions);
-        }
+                setScreenResolution(chromeOptions, browserSize);
+                driver = new ChromeDriver(chromeOptions);
+            } else if ("firefox".equalsIgnoreCase(browser)) {
+                WebDriverManager.firefoxdriver().setup();
+                FirefoxOptions firefoxOptions = new FirefoxOptions();
+                setScreenResolution(firefoxOptions, browserSize);
+                driver = new FirefoxDriver(firefoxOptions);
+            }
+            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 
-        // Initialize WebDriverWait with a timeout
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+        } catch (Exception e) {
+            logError("Failed to start the WebDriver: " + e.getMessage());
+        }
     }
 
     private void setScreenResolution(Object options, String browserSize) {
@@ -44,19 +46,20 @@ public class WebDriver {
                 ((FirefoxOptions) options).addArguments("--start-maximized");
             }
         } else if ("custom".equalsIgnoreCase(browserSize)) {
-            ((ChromeOptions) options).addArguments("--window-size=1280,1024");
+            if (options instanceof ChromeOptions) {
+                ((ChromeOptions) options).addArguments("--window-size=1280,1024");
+            } else if (options instanceof FirefoxOptions) {
+                ((FirefoxOptions) options).addArguments("--width=1280", "--height=1024");
+            }
         }
+    }
+
+    private void logError(String errorMessage) {
+        System.err.println("ERROR: " + errorMessage);
     }
 
     public org.openqa.selenium.WebDriver getDriver() {
         return driver;
-    }
-
-    public void quitDriver() {
-        if (driver != null) {
-            driver.quit();
-            driver = null;
-        }
     }
 
     public void tearDown() {

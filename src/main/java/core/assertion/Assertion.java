@@ -16,18 +16,12 @@ public class Assertion {
         this.driver = driver;
     }
 
-    public void assertTitleEquals(String expectedTitle, String message) {
-        String actualTitle = driver.getTitle();
-        System.out.println(actualTitle);
-        Assert.assertEquals(actualTitle, expectedTitle, message);
-    }
-
-    public static void assertSuccessMessageByLocator( By successMessageLocator, String expectedMessage) {
+    public static void assertSuccessMessageByLocator( By successMessageLocator, String expectedMessage, String error) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         WebElement successMessage = wait.until(ExpectedConditions.visibilityOfElementLocated(successMessageLocator));
         String actualMessage = successMessage.getText();
         System.out.println(actualMessage);
-        Assert.assertEquals(actualMessage, expectedMessage);
+        Assert.assertEquals(actualMessage, expectedMessage, error);
     }
 
 }

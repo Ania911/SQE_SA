@@ -1,10 +1,8 @@
 package pages;
 
 import core.configuration.Configs;
-import core.assertion.ElementChecker;
 import core.uttility.CommonUIActions;
 import locators.PageLocators;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class SettingsPage {
