@@ -24,6 +24,6 @@ public class testUsers  extends BaseApiTest {
     public void testGetAdminUser() {
         String url = apiConfig.getAdminUser();
         Response response = apiCall.callEndpoint("GET", url, authToken, null);
-        assertions.assertStatusCodeEquals(response, 200);
+        assertions.assertJsonFieldInResponseBody(response, "userId", "superadmin");
     }
 }

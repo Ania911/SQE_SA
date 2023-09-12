@@ -4,18 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b8a42de-fa6b-41d2-94db-bd0a72da76cc" name="Changes" comment="task 3">
-      <change afterPath="$PROJECT_DIR$/src/main/java/core/assertion/ApiAssertions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/core/uttility/ApiCaller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/core/uttility/RequestBodyBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/apiTests/BaseApiTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/apiTests/userController/testUsers.java" afterDir="false" />
+    <list default="true" id="0b8a42de-fa6b-41d2-94db-bd0a72da76cc" name="Changes" comment="almost done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/configuration/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/configuration/ApiConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/configuration/Configs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/configuration/Configs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HealthCheck.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/apiTests/testHealthCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/apiTests/testHealthCheck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/assertion/ApiAssertions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/assertion/ApiAssertions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/configuration/ApiConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/configuration/ApiConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/apiTests/userController/testUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/apiTests/userController/testUsers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,29 +95,11 @@
       <command value="mvn clean test -Denv=qa" />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.testUsers.testGetAdminUser">
-    <configuration name="testGeneralSettings.testEditSettings" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.C:/Users/Anna_Sakiv/IdeaProjects/SQE_SA/testng.xml">
+    <configuration name="C:/Users/Anna_Sakiv/IdeaProjects/SQE_SA/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SQE_SA" />
-      <shortenClasspath name="NONE" />
-      <useClassPathOnly />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SUITE_NAME" value="" />
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.testGeneralSettings" />
-      <option name="METHOD_NAME" value="testEditSettings" />
-      <option name="GROUP_NAME" value="" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="PARAMETERS" value="" />
-      <option name="OUTPUT_DIRECTORY" value="" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <option name="PROPERTIES_FILE" value="" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
       <method v="2">
@@ -248,19 +225,19 @@
     </configuration>
     <list>
       <item itemvalue="TestNG.testHealthCheck.testHCheck" />
+      <item itemvalue="TestNG.C:/Users/Anna_Sakiv/IdeaProjects/SQE_SA/testng.xml" />
       <item itemvalue="TestNG.testHealthCheck.testGetUser" />
       <item itemvalue="TestNG.testUsers.testGetAdminUser" />
-      <item itemvalue="TestNG.testGeneralSettings.testEditSettings" />
       <item itemvalue="TestNG.testHealthCheck.testaut" />
       <item itemvalue="TestNG.tests" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/Anna_Sakiv/IdeaProjects/SQE_SA/testng.xml" />
         <item itemvalue="TestNG.testUsers.testGetAdminUser" />
         <item itemvalue="TestNG.testHealthCheck.testGetUser" />
         <item itemvalue="TestNG.testHealthCheck.testaut" />
         <item itemvalue="TestNG.tests" />
-        <item itemvalue="TestNG.testGeneralSettings.testEditSettings" />
       </list>
     </recent_temporary>
   </component>
@@ -373,7 +350,15 @@
       <option name="project" value="LOCAL" />
       <updated>1694425397923</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="almost done">
+      <option name="closed" value="true" />
+      <created>1694508438633</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1694508438633</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -400,6 +385,7 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="updates" />
     <MESSAGE value="task 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="task 3" />
+    <MESSAGE value="almost done" />
+    <option name="LAST_COMMIT_MESSAGE" value="almost done" />
   </component>
 </project>
