@@ -1,18 +1,22 @@
 package apiTests;
-import core.configuration.Configs;
+
+import core.assertion.ApiAssertions;
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import pages.HealthCheck;
-public class testHealthCheck {
-    private HealthCheck hc;
+
+public class testHealthCheck extends BaseApiTest {
+    private ApiAssertions assertions;
+
     @BeforeMethod
     public void initializePage() {
-        hc = new HealthCheck();
-    }
-    @Test
-    public void testHCheck() {
-        String endpointURL = Configs.baseUrl;
-        hc.healthCheck(endpointURL);
+        assertions = new ApiAssertions();
     }
 
+    @Test
+    public void testHCheck() {
+        Response response = RestAssured.get();
+        assertions.assertStatusCodeEquals(response, 200);
+    }
 }
