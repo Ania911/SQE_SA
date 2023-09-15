@@ -18,11 +18,11 @@ public class SettingsPage {
     }
 
     public void openDropDown() {
-        commonActions.clickButton(locators.openDropdown);
+        commonActions.clickButton(locators.openInputDropdown);
     }
 
     public void dropDownOptions() {
-        commonActions.clickButton(locators.titles);
+        commonActions.clickButton(locators.lunchInactivityTimeoutField);
     }
 
     public void clickSubmitButton() {

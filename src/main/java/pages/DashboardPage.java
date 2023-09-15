@@ -19,7 +19,7 @@ public class DashboardPage {
     }
 
     public void addNewDashboard() {
-        commonActions.clickButton(locators.addDB);
+        commonActions.clickButton(locators.addNewDashboard);
     }
 
     public void enterName(String dashboardName) {
@@ -31,20 +31,20 @@ public class DashboardPage {
     }
 
     public void clicksSaveDashboard() {
-        commonActions.clickButton(locators.addButton);
+        commonActions.clickButton(locators.cancelButton);
     }
 
     public void editDashboard() {
-        commonActions.clickButton(locators.editDB);
+        commonActions.clickButton(locators.editeDashboardButton);
     }
 
     public void clickUpdateButton() {
-        commonActions.clickButton(locators.updateButton);
+        commonActions.clickButton(locators.confirmUpdateButton);
     }
 
     public void clickDeleteDashboard() {
-        commonActions.clickButton(locators.deleteDB);
-        commonActions.clickButton(locators.deleteButton);
+        commonActions.clickButton(locators.deleteDashboardButton);
+        commonActions.clickButton(locators.confirmDeleteButton);
     }
 
 }

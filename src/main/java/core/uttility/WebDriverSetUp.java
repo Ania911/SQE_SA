@@ -2,6 +2,7 @@ package core.uttility;
 
 import core.configuration.Configs;
 import io.github.bonigarcia.wdm.WebDriverManager;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -9,8 +10,8 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 
 import java.time.Duration;
 
-public class WebDriver {
-    private org.openqa.selenium.WebDriver driver;
+public class WebDriverSetUp {
+    private WebDriver driver;
 
     public void setUp() {
 //         Get the browser configuration value from the config

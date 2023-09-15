@@ -1,0 +1,19 @@
+# Selenium Configuration
+browser: chrome # web browser (e.g., chrome, firefox)
+browserSize: maximized
+
+# Users
+username: default
+password: 1q2w3e
+
+# Test Environment Configuration
+envName: http://localhost:8080 # Name of the test environment
+loginPage: http://localhost:8080/ui/#login?
+settingsPage: http://localhost:8080/ui/#default_personal/settings/general
+dashboardPage: http://localhost:8080/ui/#default_personal/dashboard
+
+# Other Configuration Settings
+other_settings:
+  timeout: 30 # Default timeout for WebDriver operations
+  log_level: INFO # Logging level for your tests (e.g., INFO, DEBUG)
+

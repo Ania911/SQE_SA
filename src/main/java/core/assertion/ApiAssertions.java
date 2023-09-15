@@ -7,7 +7,7 @@ import org.json.JSONObject;
 public class ApiAssertions {
 
     public static void assertStatusCodeEquals(Response response, int expectedStatusCode) {
-        Assert.assertEquals(response.getStatusCode(), expectedStatusCode, "Status code does not match the expected value: " + expectedStatusCode);
+        Assert.assertEquals(response.getStatusCode(), expectedStatusCode, "Status code" + " does not match the expected value: " + expectedStatusCode);
     }
 
     public static void assertResponseBodyContains(Response response, String expectedString) {
@@ -19,5 +19,6 @@ public class ApiAssertions {
         JSONObject responseBodyJson = new JSONObject(response.getBody().asString());
         Assert.assertEquals(responseBodyJson.getString(fieldName), expectedValue, "Value of field '" + fieldName + "' in response body does not match the expected value: " + expectedValue);
     }
+
 
 }

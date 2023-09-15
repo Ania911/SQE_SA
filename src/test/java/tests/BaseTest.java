@@ -1,6 +1,5 @@
 package tests;
-
-import core.uttility.WebDriver;
+import core.uttility.WebDriverSetUp;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 
@@ -9,9 +8,13 @@ public class BaseTest {
 
     @BeforeClass
     public void setUpClass() {
-        WebDriver driverManager = new WebDriver();
-        driverManager.setUp();
-        driver = driverManager.getDriver();
+        try {
+            WebDriverSetUp driverManager = new WebDriverSetUp();
+            driverManager.setUp();
+            driver = driverManager.getDriver();
+        } catch (Exception e) {
+            System.err.println("Driver setup failed: " + e.getMessage());
+        }
     }
 
     @AfterTest

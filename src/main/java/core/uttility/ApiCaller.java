@@ -36,6 +36,7 @@ public class ApiCaller {
         }
 
         response.then().log().all();
+
         return response;
     }
 

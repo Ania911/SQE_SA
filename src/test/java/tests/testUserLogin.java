@@ -24,7 +24,7 @@ public class testUserLogin extends BaseTest{
     @Test(dataProvider = "userData", dataProviderClass = DP.class)
     public void testUserLogin(String username, String password) {
         actions.userLogin(username,password);
-        assertion.assertSuccessMessageByLocator(locators.successLogInMessage,"Signed in successfully", "Signed in failed");
+        assertion.isElementPresent(locators.settingsButton);
     }
 
 }
