@@ -8,16 +8,18 @@ import org.testng.annotations.Test;
 
 public class testUserLogin extends BaseTest {
     private LoginPageActions actions;
+    private Assertion assertion;
 
     @BeforeClass
     public void initializePage() {
         actions = new LoginPageActions(driver);
+        assertion = new Assertion(actions);
     }
 
     @Test(dataProvider = "userData", dataProviderClass = DP.class)
     public void testUserLogin(String username, String password) {
         actions.userLogin(username,password);
-        Assertion.isElementPresent(PageLocators.settingsButton,"Element exists:", "Element not found:");
+        assertion.isElementPresent(PageLocators.settingsButton,"Element exists:", "Element not found:");
     }
 
 }

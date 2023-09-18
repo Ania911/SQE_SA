@@ -15,12 +15,14 @@ public class testCRUDDashboard extends BaseTest {
 
     private LoginPageActions actions;
     private DashBoardActions dashboard;
+    private Assertion assertion;
 
     @BeforeClass
     public void initializePage() {
         actions = new LoginPageActions(driver);
         actions.defaultUserLogin();
         dashboard = new DashBoardActions(driver);
+        assertion = new Assertion(dashboard);
     }
 
     @Test()
@@ -40,6 +42,6 @@ public class testCRUDDashboard extends BaseTest {
     @Test()
     public void testDeleteDashboard() {
         dashboard.deleteDashboard();
-        Assertion.assertSuccessMessageByLocator(PageLocators.successMessage, "Dashboard has been deleted", "Fail to delete dashboard");
+        assertion.assertSuccessMessageByLocator(PageLocators.successMessage, "Dashboard has been deleted", "Fail to delete dashboard");
     }
 }

@@ -12,18 +12,20 @@ import pages.SettingsPage;
 public class testGeneralSettings extends BaseTest {
     private LoginPageActions actions;
     private SettingPageActions settingPage;
+    private Assertion assertion;
 
     @BeforeClass
     public void initializePage() {
         actions = new LoginPageActions(driver);
         actions.defaultUserLogin();
         settingPage = new SettingPageActions(driver);
+        assertion = new Assertion(actions);
     }
 
     @Test()
     public void testEditSettings() {
         settingPage.selectFromDropDown();
-        Assertion.isElementPresent(PageLocators.inactivitySetting, "Element exists:", "Element not found");
+        assertion.isElementPresent(PageLocators.inactivitySetting, "Element exists:", "Element not found");
     }
 
 }

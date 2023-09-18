@@ -11,11 +11,9 @@ import pages.BasePage;
 import pages.LoginPage;
 
 public class LoginPageActions extends LoginPage {
-    private Assertion assertion;
 
     public LoginPageActions(WebDriver driver) {
         super(driver);
-        assertion = new Assertion(driver);
     }
 
     public void userLogin(String username, String password) {
