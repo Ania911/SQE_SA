@@ -1,50 +1,46 @@
 package pages;
 
 import core.configuration.Configs;
-import core.uttility.CommonUIActions;
 import locators.PageLocators;
 import org.openqa.selenium.WebDriver;
 
-public class DashboardPage {
-    private WebDriver driver;
-    private CommonUIActions commonActions;
+public class DashboardPage extends BasePage {
     private PageLocators locators;
 
-
     public DashboardPage(WebDriver driver) {
-        this.driver = driver;
-        driver.get(Configs.dashboardPage);
+        super(driver);
+        driver.get(Configs.getDashboardPage());
         locators = new PageLocators();
-        commonActions = new CommonUIActions(driver);
     }
 
-    public void addNewDashboard() {
-        commonActions.clickButton(locators.addNewDashboard);
+    public void clickAddNewDashboard() {
+        clickButton(locators.addNewDashboard);
     }
 
     public void enterName(String dashboardName) {
-        commonActions.enterText(locators.inputFieldName, dashboardName);
+        enterText(locators.inputFieldName, dashboardName);
     }
 
     public void updateName(String name) {
-        commonActions.enterText(locators.updateField, name);
+       enterText(locators.updateField, name);
     }
 
     public void clicksSaveDashboard() {
-        commonActions.clickButton(locators.cancelButton);
+        clickButton(locators.cancelButton);
     }
 
-    public void editDashboard() {
-        commonActions.clickButton(locators.editeDashboardButton);
+    public void clickEditDashboard() {
+        clickButton(locators.editeDashboardButton);
     }
 
     public void clickUpdateButton() {
-        commonActions.clickButton(locators.confirmUpdateButton);
+        clickButton(locators.confirmUpdateButton);
     }
 
     public void clickDeleteDashboard() {
-        commonActions.clickButton(locators.deleteDashboardButton);
-        commonActions.clickButton(locators.confirmDeleteButton);
+        clickButton(locators.deleteDashboardButton);
+        clickButton(locators.confirmDeleteButton);
     }
+
 
 }

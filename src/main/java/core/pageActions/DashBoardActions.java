@@ -1,36 +1,41 @@
 package core.pageActions;
 
+import core.assertion.Assertion;
 import core.uttility.Log;
 import org.apache.commons.lang.RandomStringUtils;
+import org.openqa.selenium.WebDriver;
 import pages.DashboardPage;
-import pages.SettingsPage;
 
-public class DashBoardActions {
-    private DashboardPage dashboardPage;
+public class DashBoardActions extends DashboardPage {
+    private Assertion assertion;
+    public String dashboardName = generateRandomDashboardName();
 
-    public DashBoardActions(DashboardPage dashboardPage) {
-        this.dashboardPage = dashboardPage;
+    public DashBoardActions(WebDriver driver) {
+        super(driver);
+        assertion = new Assertion(driver);
     }
 
     public void addNewDashboard() {
-        String dashboardName = generateRandomDashboardName();
         Log.info("User add new dashboard");
-        dashboardPage.addNewDashboard();
-        dashboardPage.enterName(dashboardName);
-        dashboardPage.clicksSaveDashboard();
+        clickAddNewDashboard();
+        enterName(dashboardName);
+        clicksSaveDashboard();
+        System.out.println(dashboardName);
+    }
+    public String getDashboardName() {
+        return dashboardName;
     }
 
     public void editDashboard() {
-        String dashboardName = generateRandomDashboardName();
         Log.info("User edit new dashboard");
-        dashboardPage.editDashboard();
-        dashboardPage.updateName(dashboardName);
-        dashboardPage.clickUpdateButton();
+        clickEditDashboard();
+        updateName(dashboardName);
+        clickUpdateButton();
     }
 
     public void deleteDashboard() {
         Log.info("User delete new dashboard");
-        dashboardPage.clickDeleteDashboard();
+        clickDeleteDashboard();
     }
 
     public String generateRandomDashboardName() {

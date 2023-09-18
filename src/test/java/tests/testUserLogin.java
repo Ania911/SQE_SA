@@ -5,26 +5,19 @@ import core.pageActions.LoginPageActions;
 import locators.PageLocators;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import pages.LoginPage;
 
-public class testUserLogin extends BaseTest{
-    private LoginPage loginPage;
+public class testUserLogin extends BaseTest {
     private LoginPageActions actions;
-    private Assertion assertion;
-    private PageLocators locators;
 
     @BeforeClass
     public void initializePage() {
-        loginPage = new LoginPage(driver);
-        assertion= new Assertion(driver);
-        actions = new LoginPageActions(loginPage);
-        locators = new PageLocators();
+        actions = new LoginPageActions(driver);
     }
 
     @Test(dataProvider = "userData", dataProviderClass = DP.class)
     public void testUserLogin(String username, String password) {
         actions.userLogin(username,password);
-        assertion.isElementPresent(locators.settingsButton);
+        Assertion.isElementPresent(PageLocators.settingsButton,"Element exists:", "Element not found:");
     }
 
 }

@@ -1,4 +1,4 @@
-package core.uttility;
+package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -8,11 +8,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-public class CommonUIActions {
+public class BasePage {
     private WebDriver driver;
     private WebDriverWait wait;
 
-    public CommonUIActions(WebDriver driver) {
+    public BasePage(WebDriver driver) {
         this.driver = driver;
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }

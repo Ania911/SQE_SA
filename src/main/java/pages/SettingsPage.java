@@ -1,32 +1,28 @@
 package pages;
 
 import core.configuration.Configs;
-import core.uttility.CommonUIActions;
 import locators.PageLocators;
 import org.openqa.selenium.WebDriver;
 
-public class SettingsPage {
-    private WebDriver driver;
-    private CommonUIActions commonActions;
+public class SettingsPage extends BasePage{
     private PageLocators locators;
 
     public SettingsPage(WebDriver driver) {
-        this.driver = driver;
+        super(driver);
+        driver.get(Configs.getSettingsPage());
         locators = new PageLocators();
-        commonActions = new CommonUIActions(driver);
-        driver.get(Configs.settingsPage);
     }
 
     public void openDropDown() {
-        commonActions.clickButton(locators.openInputDropdown);
+        clickButton(locators.openInputDropdown);
     }
 
-    public void dropDownOptions() {
-        commonActions.clickButton(locators.lunchInactivityTimeoutField);
+    public void selectOptionFromDropDown() {
+        clickButton(locators.inactivitySetting);
     }
 
     public void clickSubmitButton() {
-        commonActions.clickButton(locators.submitButton);
+        clickButton(locators.submitButton);
     }
 
 }

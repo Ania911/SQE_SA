@@ -15,8 +15,8 @@ public class WebDriverSetUp {
 
     public void setUp() {
 //         Get the browser configuration value from the config
-        String browser = Configs.browser;
-        String browserSize = Configs.browserSize;
+        String browser = Configs.getBrowser();
+        String browserSize = Configs.getBrowserSize();
         try {
 //        Initialize the WebDriver based on the browser
             if ("chrome".equalsIgnoreCase(browser)) {

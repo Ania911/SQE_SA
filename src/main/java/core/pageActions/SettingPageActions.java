@@ -1,19 +1,24 @@
 package core.pageActions;
 
+import core.assertion.Assertion;
 import core.uttility.Log;
+import org.openqa.selenium.WebDriver;
 import pages.SettingsPage;
 
-public class SettingPageActions {
-    private SettingsPage settingPage;
+public class SettingPageActions extends SettingsPage {
+    private Assertion assertion;
 
-    public SettingPageActions(SettingsPage settingPage) {
-        this.settingPage = settingPage;
+    public SettingPageActions(WebDriver driver) {
+        super(driver);
+        assertion = new Assertion(driver);
     }
-    public void updateDataFromDropDown() {
+
+    public void selectFromDropDown() {
         Log.info("User Open Dropdown");
-        settingPage.openDropDown();
-        settingPage.dropDownOptions();
+        openDropDown();
+        Log.info("User change settings");
+        selectOptionFromDropDown();
         Log.info("User click save button");
-        settingPage.clickSubmitButton();
+        clickSubmitButton();
     }
 }

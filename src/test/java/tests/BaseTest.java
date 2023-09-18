@@ -1,7 +1,11 @@
 package tests;
+import core.assertion.Assertion;
+import core.pageActions.LoginPageActions;
 import core.uttility.WebDriverSetUp;
+import locators.PageLocators;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
+import pages.LoginPage;
 
 public class BaseTest {
     protected org.openqa.selenium.WebDriver driver;

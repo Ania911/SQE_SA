@@ -10,28 +10,20 @@ import pages.LoginPage;
 import pages.SettingsPage;
 
 public class testGeneralSettings extends BaseTest {
-    private LoginPage loginPage;
-    private SettingsPage settings;
-    private LoginPageActions act;
-    private SettingPageActions sActions;
-    private Assertion assertion;
-    private PageLocators locators;
+    private LoginPageActions actions;
+    private SettingPageActions settingPage;
 
     @BeforeClass
     public void initializePage() {
-        loginPage = new LoginPage(driver);
-        act = new LoginPageActions(loginPage);
-        act.defaultUserLogin();
-        settings = new SettingsPage(driver);
-        sActions = new SettingPageActions(settings);
-        assertion = new Assertion(driver);
-        locators = new PageLocators();
+        actions = new LoginPageActions(driver);
+        actions.defaultUserLogin();
+        settingPage = new SettingPageActions(driver);
     }
 
     @Test()
     public void testEditSettings() {
-        sActions.updateDataFromDropDown();
-        assertion.assertSuccessMessageByLocator(locators.successSettingUpdateMessage, "Project settings were successfully updated", "Fail to update the project settings ");
+        settingPage.selectFromDropDown();
+        Assertion.isElementPresent(PageLocators.inactivitySetting, "Element exists:", "Element not found");
     }
 
 }

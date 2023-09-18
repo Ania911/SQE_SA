@@ -4,6 +4,8 @@ import io.restassured.response.Response;
 import org.testng.Assert;
 import org.json.JSONObject;
 
+import java.lang.reflect.Array;
+
 public class ApiAssertions {
 
     public static void assertStatusCodeEquals(Response response, int expectedStatusCode) {
@@ -20,5 +22,29 @@ public class ApiAssertions {
         Assert.assertEquals(responseBodyJson.getString(fieldName), expectedValue, "Value of field '" + fieldName + "' in response body does not match the expected value: " + expectedValue);
     }
 
+//    private static void assertArrayEquals(Object actual, Object expected, String message) {
+//        //is called only when expected is an array
+//        if (actual.getClass().isArray()) {
+//            int expectedLength = Array.getLength(expected);
+//            if (expectedLength == Array.getLength(actual)) {
+//                for (int i = 0 ; i < expectedLength ; i++) {
+//                    Object _actual = Array.get(actual, i);
+//                    Object _expected = Array.get(expected, i);
+//                    try {
+//                        assertEquals(_actual, _expected);
+//                    } catch (AssertionError ae) {
+//                        failNotEquals(actual, expected, message == null ? "" : message
+//                                + " (values at index " + i + " are not the same)");
+//                    }
+//                }
+//                //array values matched
+//                return;
+//            } else {
+//                failNotEquals(Array.getLength(actual), expectedLength, message == null ? "" : message
+//                        + " (Array lengths are not the same)");
+//            }
+//        }
+//        failNotEquals(actual, expected, message);
+//    }
 
 }

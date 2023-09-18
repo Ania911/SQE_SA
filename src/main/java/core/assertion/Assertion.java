@@ -1,5 +1,7 @@
 package core.assertion;
 
+import core.uttility.Log;
+import locators.PageLocators;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
@@ -24,13 +26,14 @@ public class Assertion {
         Assert.assertEquals(actualMessage, expectedMessage, error);
     }
 
-    public static String isElementPresent(By locator) {
+    public static String isElementPresent(By locator, String successMessage, String failureMessage) {
         try {
             WebElement element = driver.findElement(locator);
-            return "Element exists: " + element.getTagName();
+            Log.info("Element" + locator + "exist");
+            return successMessage + ": " + element.getTagName();
         } catch (NoSuchElementException e) {
-            return "Element not found: " + locator.toString();
+            Log.info("Element" + locator + "not found");
+            return failureMessage + ": " + locator.toString();
         }
     }
-
 }
