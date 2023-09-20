@@ -6,11 +6,9 @@ import org.openqa.selenium.WebDriver;
 import pages.SettingsPage;
 
 public class SettingPageActions extends SettingsPage {
-//    private Assertion assertion;
 
     public SettingPageActions(WebDriver driver) {
         super(driver);
-//        assertion = new Assertion(driver);
     }
 
     public void selectFromDropDown() {

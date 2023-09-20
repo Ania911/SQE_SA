@@ -7,12 +7,10 @@ import org.openqa.selenium.WebDriver;
 import pages.DashboardPage;
 
 public class DashBoardActions extends DashboardPage {
-//    private Assertion assertion;
     public String dashboardName = generateRandomDashboardName();
 
     public DashBoardActions(WebDriver driver) {
         super(driver);
-//        assertion = new Assertion(driver);
     }
 
     public void addNewDashboard() {
