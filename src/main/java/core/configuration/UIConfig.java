@@ -1,10 +1,8 @@
 package core.configuration;
 
-import java.util.Map;
+public class UIConfig {
 
-public class Configs {
-
-    private static ConfigReader configReader = ConfigReader.getInstance();
+    private static ConfigReader configReader = ConfigReader.getUIInstance();
 
     // Access configuration values
     public static String getBrowser() {
@@ -40,7 +38,7 @@ public class Configs {
     }
 
     private static String getString(String key) {
-        Object value = configReader.getValue(key);
+        Object value = configReader.getUIValue(key);
         if (value == null) {
             throw new IllegalArgumentException("Invalid configuration key: " + key);
         }

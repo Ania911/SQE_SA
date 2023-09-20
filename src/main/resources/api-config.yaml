@@ -1,0 +1,7 @@
+# Base URL
+baseURI: http://localhost:8080
+healthCheck: http://localhost:8080/health
+# User Controller
+getAdminUser: /api/v1/user/superadmin
+getAllUser: /api/v1/use
+exportAllUsers: /api/v1/user/export?view=csv

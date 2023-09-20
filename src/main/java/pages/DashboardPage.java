@@ -1,6 +1,6 @@
 package pages;
 
-import core.configuration.Configs;
+import core.configuration.UIConfig;
 import locators.PageLocators;
 import org.openqa.selenium.WebDriver;
 
@@ -9,7 +9,7 @@ public class DashboardPage extends BasePage {
 
     public DashboardPage(WebDriver driver) {
         super(driver);
-        driver.get(Configs.getDashboardPage());
+        driver.get(UIConfig.getDashboardPage());
         locators = new PageLocators();
     }
 

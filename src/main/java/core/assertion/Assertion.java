@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import pages.BasePage;
 
 public class Assertion {
-    private static BasePage basePage;
+    private BasePage basePage;
     public Assertion(BasePage basePage) {
         this.basePage = basePage;
     }

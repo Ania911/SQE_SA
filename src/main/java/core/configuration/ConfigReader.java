@@ -8,37 +8,55 @@ import java.util.Map;
 
 public class ConfigReader {
 
-    private static ConfigReader instance = null;
-    private Map<String, Object> config;
+    private static ConfigReader uiInstance = null;
+    private static ConfigReader apiInstance = null;
 
-    private ConfigReader() {
-        loadConfig();
+    private Map<String, Object> uiConfig;
+    private Map<String, Object> apiConfig;
+
+    private ConfigReader(String configFile) {
+        loadConfig(configFile);
     }
 
-    public static ConfigReader getInstance() {
-        if (instance == null) {
-            instance = new ConfigReader();
+    public static ConfigReader getUIInstance() {
+        if (uiInstance == null) {
+            uiInstance = new ConfigReader("config.yaml");
         }
-        return instance;
+        return uiInstance;
     }
 
-    private void loadConfig() {
+    public static ConfigReader getAPIInstance() {
+        if (apiInstance == null) {
+            apiInstance = new ConfigReader("api-config.yaml");
+        }
+        return apiInstance;
+    }
+
+    private void loadConfig(String configFile) {
         try {
             Yaml yaml = new Yaml();
-            InputStream inputStream = getClass().getClassLoader().getResourceAsStream("config.yaml");
+            InputStream inputStream = getClass().getClassLoader().getResourceAsStream(configFile);
             if (inputStream != null) {
-                config = yaml.load(inputStream);
-                Log.info("Configuration loaded successfully");
+                if ("config.yaml".equals(configFile)) {
+                    uiConfig = yaml.load(inputStream);
+                    Log.info("UI Configuration loaded successfully");
+                } else if ("api-config.yaml".equals(configFile)) {
+                    apiConfig = yaml.load(inputStream);
+                    Log.info("API Configuration loaded successfully");
+                }
             } else {
-                Log.error("Configuration file 'config.yaml' not found");
+                Log.error("Configuration file '" + configFile + "' not found");
             }
         } catch (Exception e) {
-            Log.error("An error occurred while loading the configuration: " + e.getMessage());
+            Log.error("An error occurred while loading the configuration '" + configFile + "': " + e.getMessage());
         }
     }
 
-    public Object getValue(String key) {
-        return config.get(key);
+    public Object getUIValue(String key) {
+        return uiConfig.get(key);
     }
 
+    public Object getAPIValue(String key) {
+        return apiConfig.get(key);
+    }
 }

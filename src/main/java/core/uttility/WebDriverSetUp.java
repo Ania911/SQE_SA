@@ -1,6 +1,6 @@
 package core.uttility;
 
-import core.configuration.Configs;
+import core.configuration.UIConfig;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -15,8 +15,8 @@ public class WebDriverSetUp {
 
     public void setUp() {
 //         Get the browser configuration value from the config
-        String browser = Configs.getBrowser();
-        String browserSize = Configs.getBrowserSize();
+        String browser = UIConfig.getBrowser();
+        String browserSize = UIConfig.getBrowserSize();
         try {
 //        Initialize the WebDriver based on the browser
             if ("chrome".equalsIgnoreCase(browser)) {

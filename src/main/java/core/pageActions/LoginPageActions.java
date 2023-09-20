@@ -1,13 +1,8 @@
 package core.pageActions;
 
-import core.assertion.Assertion;
-import core.configuration.Configs;
+import core.configuration.UIConfig;
 import core.uttility.Log;
-import locators.PageLocators;
-import org.apache.commons.lang.RandomStringUtils;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.BeforeClass;
-import pages.BasePage;
 import pages.LoginPage;
 
 public class LoginPageActions extends LoginPage {
@@ -24,8 +19,8 @@ public class LoginPageActions extends LoginPage {
     }
 
     public void defaultUserLogin() {
-        String userName = Configs.getDefaultUserName();
-        String userPass = Configs.getDefaultUserPass();
+        String userName = UIConfig.getDefaultUserName();
+        String userPass = UIConfig.getDefaultUserPass();
         enterUserName(userName);
         enterUserPass(userPass);
         clickLoginButton();

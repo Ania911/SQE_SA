@@ -1,8 +1,6 @@
 package pages;
 
-import core.assertion.Assertion;
-import core.configuration.Configs;
-import core.pageActions.LoginPageActions;
+import core.configuration.UIConfig;
 import locators.PageLocators;
 import org.openqa.selenium.WebDriver;
 
@@ -10,7 +8,7 @@ public class LoginPage extends BasePage {
     private PageLocators locators;
     public LoginPage(WebDriver driver) {
         super(driver);
-        driver.get(Configs.getLoginPage());
+        driver.get(UIConfig.getLoginPage());
         locators = new PageLocators();
     }
 
