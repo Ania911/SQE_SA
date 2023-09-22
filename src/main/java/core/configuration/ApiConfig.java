@@ -3,6 +3,9 @@ package core.configuration;
 
 public class ApiConfig {
     private static ConfigReader apiConfigReader = ConfigReader.getAPIInstance();
+    public static String token() {
+        return getString("token");
+    }
 
     public static String healthCheck() {
         return getString("healthCheck");
@@ -17,8 +20,8 @@ public class ApiConfig {
         return getString("getAdminUser");
     }
 
-    public static String getAllUser() {
-        return getString("getAllUser");
+    public static String getUser() {
+        return getString("getUser");
     }
 
     public static String exportAllUsers() {

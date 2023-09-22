@@ -22,9 +22,11 @@ public class ApiCaller {
         return response.getBody().asString();
     }
 
-    public Response post(String endpoint, Map<String, Object> requestBody) {
+    public int post(String endpoint, Map<String, Object> requestBody) {
         RequestSpecification requestSpec = createRequestSpec();
-        return requestSpec.body(requestBody).when().post(endpoint);
+        Response response = requestSpec.body(requestBody).when().post(endpoint);
+        logResponse(response);
+        return response.getStatusCode();
     }
 
     public Response put(String endpoint, Map<String, Object> requestBody) {

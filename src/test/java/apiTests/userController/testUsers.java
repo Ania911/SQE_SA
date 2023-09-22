@@ -3,8 +3,14 @@ package apiTests.userController;
 import apiTests.BaseApiTest;
 import core.assertion.ApiAssertions;
 import core.uttility.ApiCaller;
+import core.uttility.RequestBodyBuilder;
+import io.restassured.response.Response;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
+import java.util.Map;
+
+import static core.uttility.RequestBodyBuilder.buildUserRequestBody;
 
 public class testUsers extends BaseApiTest {
     private ApiCaller apiMethod;
@@ -19,5 +25,20 @@ public class testUsers extends BaseApiTest {
         String url = apiConfig.getAdminUser();
         String response = apiMethod.get(url);
         ApiAssertions.assertJsonField(response, "userId", "superadmin");
+    }
+
+    @Test
+    public void testCurrentLoggedInUser() {
+        String url = apiConfig.getUser();
+        String response = apiMethod.get(url);
+        ApiAssertions.assertJsonField(response, "userId", "superadmin");
+    }
+
+    @Test
+    public void testCreateSpecifiedUser() {
+        String url = apiConfig.getUser();
+        Map<String, Object> requestBody = buildUserRequestBody("Testers12", "test1234");
+        Integer response = apiMethod.post(url, requestBody);
+        ApiAssertions.assertResponseCode(response, 201);
     }
 }
