@@ -13,33 +13,40 @@ public class DashboardPage extends BasePage {
         locators = new PageLocators();
     }
 
-    public void clickAddNewDashboard() {
+    public DashboardPage clickAddNewDashboard() {
         clickButton(locators.addNewDashboard);
+        return this;
     }
 
-    public void enterName(String dashboardName) {
+    public DashboardPage enterName(String dashboardName) {
         enterText(locators.inputFieldName, dashboardName);
+        return this;
     }
 
-    public void updateName(String name) {
-       enterText(locators.updateField, name);
+    public DashboardPage updateName(String name) {
+        enterText(locators.updateField, name);
+        return this;
     }
 
-    public void clicksSaveDashboard() {
+    public DashboardPage clicksSaveDashboard() {
         clickButton(locators.cancelButton);
+        return this;
     }
 
-    public void clickEditDashboard() {
+    public DashboardPage clickEditDashboard() {
         clickButton(locators.editeDashboardButton);
+        return this;
     }
 
-    public void clickUpdateButton() {
+    public DashboardPage clickUpdateButton() {
         clickButton(locators.confirmUpdateButton);
+        return this;
     }
 
-    public void clickDeleteDashboard() {
+    public DashboardPage clickDeleteDashboard() {
         clickButton(locators.deleteDashboardButton);
         clickButton(locators.confirmDeleteButton);
+        return this;
     }
 
 

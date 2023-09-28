@@ -7,32 +7,27 @@ import org.openqa.selenium.WebDriver;
 import pages.DashboardPage;
 
 public class DashBoardActions extends DashboardPage {
-    public String dashboardName = generateRandomDashboardName();
+    private String dashboardName = generateRandomDashboardName();
 
     public DashBoardActions(WebDriver driver) {
         super(driver);
     }
 
-    public void addNewDashboard() {
-        Log.info("User add new dashboard");
-        clickAddNewDashboard();
-        enterName(dashboardName);
-        clicksSaveDashboard();
-        System.out.println(dashboardName);
-    }
-    public String getDashboardName() {
+    public String addNewDashboard() {
+        clickAddNewDashboard()
+                .enterName(dashboardName)
+                .clicksSaveDashboard();
         return dashboardName;
     }
 
-    public void editDashboard() {
-        Log.info("User edit new dashboard");
-        clickEditDashboard();
-        updateName(dashboardName);
-        clickUpdateButton();
+    public String editDashboard() {
+        clickEditDashboard()
+                .updateName(dashboardName)
+                .clickUpdateButton();
+        return dashboardName;
     }
 
     public void deleteDashboard() {
-        Log.info("User delete new dashboard");
         clickDeleteDashboard();
     }
 

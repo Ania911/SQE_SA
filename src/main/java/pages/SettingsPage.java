@@ -2,9 +2,10 @@ package pages;
 
 import core.configuration.UIConfig;
 import locators.PageLocators;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class SettingsPage extends BasePage{
+public class SettingsPage extends BasePage {
     private PageLocators locators;
 
     public SettingsPage(WebDriver driver) {
@@ -17,9 +18,10 @@ public class SettingsPage extends BasePage{
         clickButton(locators.openInputDropdown);
     }
 
-    public void selectOptionFromDropDown() {
-        clickButton(locators.inactivitySetting);
+    public void selectOptionFromDropDown(By locator) {
+        clickButton(locator);
     }
+
 
     public void clickSubmitButton() {
         clickButton(locators.submitButton);

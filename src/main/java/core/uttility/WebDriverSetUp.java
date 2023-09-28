@@ -17,19 +17,27 @@ public class WebDriverSetUp {
 //         Get the browser configuration value from the config
         String browser = UIConfig.getBrowser();
         String browserSize = UIConfig.getBrowserSize();
+        String chromeOptionsFromConfig = UIConfig.getChromeOptions();
+        String firefoxOptionsFromConfig = UIConfig.getFirefoxOptions();
         try {
 //        Initialize the WebDriver based on the browser
             if ("chrome".equalsIgnoreCase(browser)) {
 //            https://bonigarcia.dev/webdrivermanager/ - setup gecko driver
                 WebDriverManager.chromedriver().setup();
+
                 ChromeOptions chromeOptions = new ChromeOptions();
-//            Check the window screen
-                setScreenResolution(chromeOptions, browserSize);
+                if ("maximized".equalsIgnoreCase(browserSize) && chromeOptionsFromConfig != null && !chromeOptionsFromConfig.isEmpty()) {
+                    String[] chromeOptionsArray = chromeOptionsFromConfig.split(",\\s*");
+                    chromeOptions.addArguments(chromeOptionsArray);
+                }
                 driver = new ChromeDriver(chromeOptions);
             } else if ("firefox".equalsIgnoreCase(browser)) {
                 WebDriverManager.firefoxdriver().setup();
                 FirefoxOptions firefoxOptions = new FirefoxOptions();
-                setScreenResolution(firefoxOptions, browserSize);
+                if ("maximized".equalsIgnoreCase(browserSize) && firefoxOptionsFromConfig != null && !firefoxOptionsFromConfig.isEmpty()) {
+                    String[] firefoxOptionsArray = firefoxOptionsFromConfig.split(",\\s*");
+                    firefoxOptions.addArguments(firefoxOptionsArray);
+                }
                 driver = new FirefoxDriver(firefoxOptions);
             }
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
@@ -39,21 +47,6 @@ public class WebDriverSetUp {
         }
     }
 
-    private void setScreenResolution(Object options, String browserSize) {
-        if ("maximized".equalsIgnoreCase(browserSize)) {
-            if (options instanceof ChromeOptions) {
-                ((ChromeOptions) options).addArguments("--start-maximized");
-            } else if (options instanceof FirefoxOptions) {
-                ((FirefoxOptions) options).addArguments("--start-maximized");
-            }
-        } else if ("custom".equalsIgnoreCase(browserSize)) {
-            if (options instanceof ChromeOptions) {
-                ((ChromeOptions) options).addArguments("--window-size=1280,1024");
-            } else if (options instanceof FirefoxOptions) {
-                ((FirefoxOptions) options).addArguments("--width=1280", "--height=1024");
-            }
-        }
-    }
 
     private void logError(String errorMessage) {
         System.err.println("ERROR: " + errorMessage);

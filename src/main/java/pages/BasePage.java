@@ -1,10 +1,12 @@
 package pages;
 
+import core.uttility.Log;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
@@ -28,6 +30,16 @@ public class BasePage {
     public void clickButton(By locator) {
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
         element.click();
+    }
+
+    public void selectByValue(By locator, String options) {
+        Select dropdownOptions = new Select(driver.findElement(locator));
+        dropdownOptions.selectByValue(options);
+    }
+
+    public void selectByVisibleText(By locator, String options) {
+        Select dropdownOptions = new Select(driver.findElement(locator));
+        dropdownOptions.selectByVisibleText(options);
     }
 
     public void waitForElementToBeVisible(By locator) {
@@ -56,22 +68,21 @@ public class BasePage {
         return driver.findElement(locator);
     }
 
+    public WebElement findElementWithWait(By locator) {
+        waitForVisibilityOfElement(locator, 10);
+        return findElement(locator);
+    }
+
+    public String getTextByLocator(By locator) {
+        WebElement element = findElementWithWait(locator);
+        String text = element.getText();
+        System.out.println("The text is: " + text);
+        return text;
+    }
+
     public void waitForVisibilityOfElement(By locator, int timeoutInSeconds) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutInSeconds));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
-    }
-
-    public void assertTextEquals(String actual, String expected, String error) {
-        Assert.assertEquals(actual, expected, error);
-    }
-
-    public boolean isElementPresent(By locator) {
-        try {
-            findElement(locator);
-            return true;
-        } catch (NoSuchElementException e) {
-            return false;
-        }
+        wait.until(ExpectedConditions.presenceOfElementLocated(locator));
     }
 
 

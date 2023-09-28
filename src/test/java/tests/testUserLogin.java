@@ -1,11 +1,17 @@
 package tests;
+
 import core.assertion.Assertion;
 import core.dataProvider.DP;
 import core.pageActions.LoginPageActions;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Story;
 import locators.PageLocators;
+import org.junit.jupiter.api.DisplayName;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+@Feature("User management")
+@Story("User log in")
 public class testUserLogin extends BaseTest {
     private LoginPageActions actions;
     private Assertion assertion;
@@ -17,9 +23,11 @@ public class testUserLogin extends BaseTest {
     }
 
     @Test(dataProvider = "userData", dataProviderClass = DP.class)
+    @DisplayName("Test success user login")
     public void testUserLogin(String username, String password) {
-        actions.userLogin(username,password);
-        assertion.isElementPresent(PageLocators.settingsButton,"Element exists:", "Element not found:");
+        actions
+                .userLogin(username, password);
+        assertion.assertElementPresent(PageLocators.settingsButton, "Project settings", "Element not found:");
     }
 
 }

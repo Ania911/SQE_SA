@@ -1,8 +1,7 @@
 package core.configuration;
 
 public class UIConfig {
-
-    private static ConfigReader configReader = ConfigReader.getUIInstance();
+    private static ConfigReader configReader = ConfigReader.getInstance("config.yaml");
 
     // Access configuration values
     public static String getBrowser() {
@@ -15,6 +14,13 @@ public class UIConfig {
 
     public static String getBrowserSize() {
         return getString("browserSize");
+    }
+    public static String getChromeOptions() {
+        return getString("chromeOptions");
+    }
+
+    public static String getFirefoxOptions() {
+        return getString("firefoxOptions");
     }
 
     public static String getDefaultUserName() {
@@ -38,7 +44,7 @@ public class UIConfig {
     }
 
     private static String getString(String key) {
-        Object value = configReader.getUIValue(key);
+        Object value = configReader.getValue(key);
         if (value == null) {
             throw new IllegalArgumentException("Invalid configuration key: " + key);
         }

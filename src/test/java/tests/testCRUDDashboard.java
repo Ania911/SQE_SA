@@ -4,11 +4,9 @@ import core.assertion.Assertion;
 import core.pageActions.DashBoardActions;
 import core.pageActions.LoginPageActions;
 import locators.PageLocators;
-import org.testng.Assert;
+import org.junit.jupiter.api.DisplayName;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import pages.DashboardPage;
-import pages.LoginPage;
 
 
 public class testCRUDDashboard extends BaseTest {
@@ -26,22 +24,23 @@ public class testCRUDDashboard extends BaseTest {
     }
 
     @Test()
+    @DisplayName("Test add dashboard")
     public void testEddDashboard() {
-        dashboard.addNewDashboard();
-        String returnedDashboardName = dashboard.getDashboardName();
-        Assert.assertEquals(returnedDashboardName, dashboard.dashboardName);
+        String newDashboard = dashboard.addNewDashboard();
+        assertion.assertElementPresent(PageLocators.dashboardName, newDashboard, "Element not found");
     }
 
     @Test()
+    @DisplayName("Test edit dashboard")
     public void testEditDashboard() {
-        dashboard.editDashboard();
-        String returnedDashboardName = dashboard.getDashboardName();
-        Assert.assertEquals(returnedDashboardName, dashboard.dashboardName);
+        String newDashboard = dashboard.editDashboard();
+        assertion.assertElementPresent(PageLocators.dashboardName, newDashboard, "Element not found");
     }
 
     @Test()
-    public void testDeleteDashboard() {
+    @DisplayName("Test delete dashboard")
+    public void testWDeleteDashboard() {
         dashboard.deleteDashboard();
-        assertion.assertSuccessMessageByLocator(PageLocators.successMessage, "Dashboard has been deleted", "Fail to delete dashboard");
+        assertion.assertElementPresent(PageLocators.successMessage, "Dashboard has been deleted", "Fail to delete dashboard");
     }
 }

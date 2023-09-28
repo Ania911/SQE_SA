@@ -2,7 +2,7 @@ package core.configuration;
 
 
 public class ApiConfig {
-    private static ConfigReader apiConfigReader = ConfigReader.getAPIInstance();
+    private static ConfigReader apiConfigReader = ConfigReader.getInstance("api-config.yaml");
     public static String token() {
         return getString("token");
     }
@@ -29,9 +29,9 @@ public class ApiConfig {
     }
 
     private static String getString(String key) {
-        Object value = apiConfigReader.getAPIValue(key);
+        Object value = apiConfigReader.getValue(key);
         if (value == null) {
-            throw new IllegalArgumentException("Invalid API configuration key: " + key);
+            throw new IllegalArgumentException("Invalid configuration key: " + key);
         }
         return value.toString();
     }
