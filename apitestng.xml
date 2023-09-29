@@ -10,9 +10,6 @@
         <classes>
             <class name="apiTests.userController.testUsers"/>
             <class name="apiTests.healthCheck.testHealthCheck"/>
-            <class name="tests.testUserLogin"/>
-            <class name="tests.testGeneralSettings"/>
-            <class name="tests.testCRUDDashboard"/>
         </classes>
     </test>
 </suite>

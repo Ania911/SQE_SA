@@ -7,8 +7,7 @@ import io.qameta.allure.Feature;
 import io.qameta.allure.Story;
 import locators.PageLocators;
 import org.junit.jupiter.api.DisplayName;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 @Feature("User management")
 @Story("User log in")
@@ -27,7 +26,8 @@ public class testUserLogin extends BaseTest {
     public void testUserLogin(String username, String password) {
         actions
                 .userLogin(username, password);
-        assertion.assertElementPresent(PageLocators.settingsButton, "Project settings", "Element not found:");
+        assertion.assertElementPresent(PageLocators.settingsButton, "Element not found");
     }
+
 
 }

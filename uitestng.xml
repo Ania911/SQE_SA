@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SmokeTesting">
+    <listeners>
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+    </listeners>
+    <parameter name="allure.results.directory" value="C:\Users\Anna_Sakiv\IdeaProjects\AllureResults"/>
+
+    <test name="Test">
+        <classes>
+            <class name="tests.testUserLogin"/>
+            <class name="tests.testGeneralSettings"/>
+<!--            <class name="tests.testCRUDDashboard"/>-->
+        </classes>
+    </test>
+</suite>

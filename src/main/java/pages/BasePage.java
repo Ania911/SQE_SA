@@ -11,6 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import java.time.Duration;
+import java.util.List;
 
 public class BasePage {
     private WebDriver driver;
@@ -83,6 +84,11 @@ public class BasePage {
     public void waitForVisibilityOfElement(By locator, int timeoutInSeconds) {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutInSeconds));
         wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+    }
+
+    public boolean isElementPresent(By locator) {
+        List<WebElement> elements = driver.findElements(locator);
+        return !elements.isEmpty();
     }
 
 

@@ -10,9 +10,15 @@ public class Assertion {
     public Assertion(BasePage basePage) {
         this.basePage = basePage;
     }
-    public void assertElementPresent(By locator, String expected, String error) {
+    public void assertTextPresent(By locator, String expected, String error) {
         String actual = basePage.getTextByLocator(locator);
         Assert.assertEquals(actual, expected, error);
     }
+
+    public void assertElementPresent(By locator, String error) {
+        Boolean actual = basePage.isElementPresent(locator);
+        Assert.assertTrue(actual, error);
+    }
+
 
 }

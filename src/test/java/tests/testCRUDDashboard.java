@@ -27,20 +27,20 @@ public class testCRUDDashboard extends BaseTest {
     @DisplayName("Test add dashboard")
     public void testEddDashboard() {
         String newDashboard = dashboard.addNewDashboard();
-        assertion.assertElementPresent(PageLocators.dashboardName, newDashboard, "Element not found");
+        assertion.assertTextPresent(PageLocators.dashboardName, newDashboard, "Element not found");
     }
 
     @Test()
     @DisplayName("Test edit dashboard")
     public void testEditDashboard() {
         String newDashboard = dashboard.editDashboard();
-        assertion.assertElementPresent(PageLocators.dashboardName, newDashboard, "Element not found");
+        assertion.assertTextPresent(PageLocators.dashboardName, newDashboard, "Element not found");
     }
 
     @Test()
     @DisplayName("Test delete dashboard")
     public void testWDeleteDashboard() {
         dashboard.deleteDashboard();
-        assertion.assertElementPresent(PageLocators.successMessage, "Dashboard has been deleted", "Fail to delete dashboard");
+        assertion.assertTextPresent(PageLocators.successMessage, "Dashboard has been deleted", "Fail to delete dashboard");
     }
 }

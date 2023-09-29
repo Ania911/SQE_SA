@@ -7,6 +7,7 @@ import locators.PageLocators;
 import org.junit.jupiter.api.DisplayName;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import org.xml.sax.Locator;
 
 public class testGeneralSettings extends BaseTest {
     private LoginPageActions actions;
@@ -26,7 +27,7 @@ public class testGeneralSettings extends BaseTest {
     public void testEditSettings() {
         String option = "6 hours";
         settingPage.selectFromDropDown(option);
-        assertion.assertElementPresent(settingPage.getOptionText(option), option, "Element not found");
+        assertion.assertTextPresent(PageLocators.launchSetting, "6 hours", "Element not found");
     }
 }
 

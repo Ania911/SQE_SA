@@ -1,8 +1,8 @@
 # Selenium Configuration
 browser: chrome # web browser (e.g., chrome, firefox)
 browserSize: maximized
-chromeOptions: "--start-maximized, --disable-extensions, --disable-popup-blocking"
-firefoxOptions: "--start-maximized, --disable-extensions, --disable-popup-blocking"
+chromeOptions: "--start-maximized --disable-extensions --disable-popup-blocking"
+firefoxOptions: "--start-maximized --disable-extensions --disable-popup-blocking"
 
 # Users
 username: default

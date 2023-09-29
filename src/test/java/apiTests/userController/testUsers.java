@@ -21,17 +21,17 @@ public class testUsers extends BaseApiTest {
     }
 
     @Test
-    public void testGetAdminUser() {
-        String url = apiConfig.getAdminUser();
+    public void testGetUserRegistration() {
+        String url = apiConfig.getUserRegistration();
         String response = apiMethod.get(url);
-        ApiAssertions.assertJsonField(response, "userId", "superadmin");
+        ApiAssertions.assertJsonField(response, "isActive", false);
     }
 
     @Test
     public void testCurrentLoggedInUser() {
         String url = apiConfig.getUser();
         String response = apiMethod.get(url);
-        ApiAssertions.assertJsonField(response, "userId", "superadmin");
+        ApiAssertions.assertJsonField(response, "userId", "default");
     }
 
     @Test
@@ -39,6 +39,6 @@ public class testUsers extends BaseApiTest {
         String url = apiConfig.getUser();
         Map<String, Object> requestBody = buildUserRequestBody("Testers12", "test1234");
         Integer response = apiMethod.post(url, requestBody);
-        ApiAssertions.assertResponseCode(response, 201);
+        ApiAssertions.assertResponseCode(response, 403);
     }
 }

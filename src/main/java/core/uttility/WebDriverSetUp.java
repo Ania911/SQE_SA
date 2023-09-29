@@ -16,6 +16,7 @@ public class WebDriverSetUp {
     public void setUp() {
 //         Get the browser configuration value from the config
         String browser = UIConfig.getBrowser();
+        System.out.println("The browser is"+ browser);
         String browserSize = UIConfig.getBrowserSize();
         String chromeOptionsFromConfig = UIConfig.getChromeOptions();
         String firefoxOptionsFromConfig = UIConfig.getFirefoxOptions();
@@ -27,7 +28,7 @@ public class WebDriverSetUp {
 
                 ChromeOptions chromeOptions = new ChromeOptions();
                 if ("maximized".equalsIgnoreCase(browserSize) && chromeOptionsFromConfig != null && !chromeOptionsFromConfig.isEmpty()) {
-                    String[] chromeOptionsArray = chromeOptionsFromConfig.split(",\\s*");
+                    String[] chromeOptionsArray = chromeOptionsFromConfig.split(" ");;
                     chromeOptions.addArguments(chromeOptionsArray);
                 }
                 driver = new ChromeDriver(chromeOptions);
@@ -35,7 +36,7 @@ public class WebDriverSetUp {
                 WebDriverManager.firefoxdriver().setup();
                 FirefoxOptions firefoxOptions = new FirefoxOptions();
                 if ("maximized".equalsIgnoreCase(browserSize) && firefoxOptionsFromConfig != null && !firefoxOptionsFromConfig.isEmpty()) {
-                    String[] firefoxOptionsArray = firefoxOptionsFromConfig.split(",\\s*");
+                    String[] firefoxOptionsArray = firefoxOptionsFromConfig.split(" ");;
                     firefoxOptions.addArguments(firefoxOptionsArray);
                 }
                 driver = new FirefoxDriver(firefoxOptions);

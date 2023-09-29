@@ -3,8 +3,7 @@ import core.assertion.Assertion;
 import core.pageActions.LoginPageActions;
 import core.uttility.WebDriverSetUp;
 import locators.PageLocators;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.*;
 import pages.LoginPage;
 
 public class BaseTest {

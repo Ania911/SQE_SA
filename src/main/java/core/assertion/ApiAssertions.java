@@ -24,5 +24,18 @@ public class ApiAssertions {
             Assert.fail(errorMessage);
         }
     }
+
+    public static void assertJsonField(String responseBody, String fieldName, Boolean expectedValue) {
+        JSONObject responseBodyJson = new JSONObject(responseBody);
+
+        if (responseBodyJson.has(fieldName)) {
+            boolean actualValue = responseBodyJson.getBoolean(fieldName);
+            String errorMessage = String.format("Value of field '%s' in response body does not match the expected value: '%s'", fieldName, expectedValue);
+            Assert.assertEquals(actualValue, expectedValue, errorMessage);
+        } else {
+            String errorMessage = String.format("Field '%s' not found in response body", fieldName);
+            Assert.fail(errorMessage);
+        }
+    }
 }
 

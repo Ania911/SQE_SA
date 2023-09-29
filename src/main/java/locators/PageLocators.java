@@ -11,7 +11,8 @@ public class PageLocators {
     // Setting Page
     public static By settingsButton = By.xpath("//span[text()='Project settings']");
     public static By submitButton = By.xpath("//button[text()='Submit']");
-    public By openInputDropdown = By.xpath("(//div[@class='inputDropdown__dropdown-container--2CVaC'])[2]\n");
+    public By openInputDropdown = By.xpath("(//div[@class='inputDropdown__dropdown-container--2CVaC'])[2]");
+    public static By launchSetting = By.xpath("//span[text()='6 hours']");
 
     // Dashboard Page
     // Add new Dashboard

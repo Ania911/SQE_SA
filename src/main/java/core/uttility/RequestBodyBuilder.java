@@ -19,6 +19,14 @@ public class RequestBodyBuilder {
         return requestBody;
     }
 
+    public static Map<String, Object> buildTokenRequestBody(String username, String password) {
+        Map<String, Object> requestBody = new HashMap<>();
+        requestBody.put("grant_type", "Basic dWk6dWltYW4=");
+        requestBody.put("username", username);
+        requestBody.put("password", password);
+        return requestBody;
+    }
+
     public static String generateRandomEmail() {
         String randomUsername = RandomStringUtils.randomAlphanumeric(10);
         String randomDomain = RandomStringUtils.randomAlphanumeric(5) + ".com";
