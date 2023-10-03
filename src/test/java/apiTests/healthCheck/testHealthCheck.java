@@ -2,16 +2,16 @@ package apiTests.healthCheck;
 
 import apiTests.BaseApiTest;
 import core.assertion.ApiAssertions;
-import core.uttility.ApiCaller;
+import core.uttility.ApiMethods;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class testHealthCheck extends BaseApiTest {
-    private ApiCaller apiMethod;
+    private ApiMethods apiMethod;
 
     @BeforeMethod
     public void initializePage() {
-        apiMethod = new ApiCaller(authToken);
+        apiMethod = new ApiMethods(authToken);
     }
     @Test
     public void testHCheck() {

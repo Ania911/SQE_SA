@@ -3,6 +3,7 @@ import com.opencsv.CSVReader;
 import com.opencsv.CSVReaderBuilder;
 import org.testng.annotations.DataProvider;
 import java.io.FileReader;
+import java.util.Arrays;
 import java.util.List;
 
 public class DP {
@@ -33,6 +34,13 @@ public class DP {
             // Return an empty array if there's an exception
             return new Object[0][0];
         }
+    }
+    @DataProvider(name = "petData")
+    public Object[][] petData() {
+        return new Object[][] {
+                {"Buddy", "Available", Arrays.asList("url1")},
+                {"Fido", "Pending", Arrays.asList("url2")},
+        };
     }
 
 }

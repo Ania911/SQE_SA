@@ -2,9 +2,7 @@ package apiTests.userController;
 
 import apiTests.BaseApiTest;
 import core.assertion.ApiAssertions;
-import core.uttility.ApiCaller;
-import core.uttility.RequestBodyBuilder;
-import io.restassured.response.Response;
+import core.uttility.ApiMethods;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -13,11 +11,11 @@ import java.util.Map;
 import static core.uttility.RequestBodyBuilder.buildUserRequestBody;
 
 public class testUsers extends BaseApiTest {
-    private ApiCaller apiMethod;
+    private ApiMethods apiMethod;
 
     @BeforeMethod
     public void initializePage() {
-        apiMethod = new ApiCaller(authToken);
+        apiMethod = new ApiMethods(authToken);
     }
 
     @Test

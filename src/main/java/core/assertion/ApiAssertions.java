@@ -1,16 +1,16 @@
 package core.assertion;
 
+import io.restassured.response.Response;
 import org.testng.Assert;
 import org.json.JSONObject;
 
 
 public class ApiAssertions {
 
-    public static void assertResponseCode(int actualStatusCode, int expectedStatusCode) {
+    public static void assertResponseCode(Integer actualStatusCode, int expectedStatusCode) {
         String errorMessage = String.format("Expected status code: %d, but got: %d", expectedStatusCode, actualStatusCode);
         Assert.assertEquals(actualStatusCode, expectedStatusCode, errorMessage);
     }
-
 
     public static void assertJsonField(String responseBody, String fieldName, String expectedValue) {
         JSONObject responseBodyJson = new JSONObject(responseBody);

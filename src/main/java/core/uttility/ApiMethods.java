@@ -8,10 +8,10 @@ import java.util.Map;
 
 import static io.restassured.RestAssured.given;
 
-public class ApiCaller {
+public class ApiMethods {
     private String authToken;
 
-    public ApiCaller(String authToken) {
+    public ApiMethods(String authToken) {
         this.authToken = authToken;
     }
 
@@ -48,4 +48,5 @@ public class ApiCaller {
     private void logResponse(Response response) {
         response.then().log().all();
     }
+
 }
