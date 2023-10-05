@@ -42,5 +42,12 @@ public class DP {
                 {"Fido", "Pending", Arrays.asList("url2")},
         };
     }
+    @DataProvider(name = "petUser")
+    public Object[][] petUser() {
+        return new Object[][] {
+                {"Test", "Test123"},
+                {"Test1", "Test1234"},
+        };
+    }
 
 }

@@ -11,6 +11,9 @@ getUserRegistration: /api/v1/user/registration?uuid=1
 getUser: /api/v1/user
 exportAllUsers: /api/v1/user/export?view=csv
 #Pets
-base: https://petstore.swagger.io
-createPets: /v2/pet
-deletePets: /v2/pet/
+base: https://petstore.swagger.io/v2
+createPets: /pet
+deletePets: /pet/
+createUser: /user
+login: /user/login?
+logout: /user/logout

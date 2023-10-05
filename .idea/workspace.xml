@@ -4,25 +4,52 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b8a42de-fa6b-41d2-94db-bd0a72da76cc" name="Changes" comment="Friday">
-      <change afterPath="$PROJECT_DIR$/log4j2-sample-2023-09-29.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/log4j2-sample-2023-10-01.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/core/configuration/PetsConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/core/payload/pets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/core/uttility/ApiBodyBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/core/uttility/PetJsonUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/petstore/CreatePets.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/pets.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/apiTests/BasePets.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/apiTests/pets/testPets.java" afterDir="false" />
+    <list default="true" id="0b8a42de-fa6b-41d2-94db-bd0a72da76cc" name="Changes" comment="Monday">
+      <change afterPath="$PROJECT_DIR$/allure-results/0137e76e-730c-41ef-a195-8dde11fc2e43-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/06b7385c-b793-4b2c-9dd4-38d128b743bf-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/0718bd36-4b97-4dfb-872b-41b0b92b6400-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/08cee18e-ed30-4cd2-b81e-c9c3323d23d3-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/12f01f4c-ff83-4ade-8ea3-b030c870762e-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/2266e5ca-db3c-44e3-a8d1-7bb63404f32b-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/40999000-adce-4edf-b378-09b456908dd7-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/4cb0039b-ad18-4dc1-8fb9-15cad5c0e2f1-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/5317856a-8c98-491e-8440-ef57992acde3-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/61c8006f-007c-4988-9f2a-af1beda81126-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/730104c7-7cfc-4370-a0c2-10509423998d-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/7370c7c8-f8d2-41a4-a3af-ce8f235b2160-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/7aa5f11d-b3ee-4134-a84e-610cef2c776d-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/7bf463ab-a8b0-4ba7-8df6-cf3a1c0eadf2-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/7dadd4e7-c779-4a24-b1a4-4b21f6f3605d-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/828d812f-b9b1-4613-aeb4-5a335f30beb0-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/8ad5e869-21e5-4903-b1a4-9ececa1c9493-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/8ce8be1c-aff0-490d-88a6-f54268d4271e-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/8def5180-4d1e-4f71-ab50-c2ff8d5c1c57-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/905a2e44-74c4-4e1f-8080-2c6dda297004-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/95e36578-1601-47b9-87a7-f561852bb4be-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/9cd5fa68-94a6-433c-90cd-d68726de5fcb-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/9f860172-d219-42ac-ae04-9f69ed031f4d-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/a50fb411-1684-43c5-bd21-16671bfda7f8-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/a6dba4d4-c2de-4ec8-a88f-5e1e68a2ddcb-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/a952afbc-3044-4e32-a2d4-c06bfc1454a8-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/cf23cb93-b17c-47e1-b4d8-17bf2d7535c2-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/cfc85d97-1f2f-46d4-ab2a-28333ec3b7d6-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/d5e1d617-5cd5-4a0a-94a7-924b5576cb55-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/e50c64f8-f274-4395-a3d2-4139bff6e36f-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/e9e4a4f6-acae-419c-aba8-cae27cc35edb-attachment.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/ebf2a95c-fec7-4944-b214-94337459deab-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/f29fdb49-3cef-4e9e-b6ac-ccd0f86b5925-result.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-results/f34a1bb7-c1a1-41bd-a730-7e2c5061f9c8-container.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/log4j2-sample-2023-10-04.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/petstore/CreateUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/apiTests/pets/testUserFlow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/assertion/ApiAssertions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/assertion/ApiAssertions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log4j2-sample-2023-09-29.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log4j2-sample-2023-10-01.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/configuration/PetsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/configuration/PetsConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/core/dataProvider/DP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/dataProvider/DP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/core/uttility/ApiCaller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/uttility/ApiMethods.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/api-config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/api-config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/apiTests/healthCheck/testHealthCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/apiTests/healthCheck/testHealthCheck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/apiTests/userController/testUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/apiTests/userController/testUsers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uitestng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/uitestng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +134,17 @@
       <command value="mvn clean test -Denv=qa" />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.testPets">
+  <component name="RunManager" selected="TestNG.C:/Users/Anna_Sakiv/IdeaProjects/SQE_SA/uitestng.xml">
+    <configuration name="C:/Users/Anna_Sakiv/IdeaProjects/SQE_SA/uitestng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SQE_SA" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/uitestng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="testCRUDDashboard" type="TestNG" nameIsGenerated="true">
       <module name="SQE_SA" />
       <shortenClasspath name="NONE" />
@@ -196,7 +233,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testPets.testDeletePet" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="testUserFlow.testAddNewPet" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SQE_SA" />
       <extension name="coverage">
         <pattern>
@@ -205,26 +242,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="apiTests.pets" />
-      <option name="MAIN_CLASS_NAME" value="apiTests.pets.testPets" />
-      <option name="METHOD_NAME" value="testDeletePet" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="testPets.testUpdatePhoto" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="SQE_SA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="apiTests.pets.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="apiTests.pets" />
-      <option name="MAIN_CLASS_NAME" value="apiTests.pets.testPets" />
-      <option name="METHOD_NAME" value="testUpdatePhoto" />
+      <option name="MAIN_CLASS_NAME" value="apiTests.pets.testUserFlow" />
+      <option name="METHOD_NAME" value="testAddNewPet" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -252,19 +271,19 @@
     <list>
       <item itemvalue="TestNG.testCRUDDashboard" />
       <item itemvalue="TestNG.testHealthCheck.testHCheck" />
+      <item itemvalue="TestNG.C:/Users/Anna_Sakiv/IdeaProjects/SQE_SA/uitestng.xml" />
       <item itemvalue="TestNG.testPets" />
       <item itemvalue="TestNG.testPets.testAddNewPet" />
-      <item itemvalue="TestNG.testPets.testDeletePet" />
-      <item itemvalue="TestNG.testPets.testUpdatePhoto" />
+      <item itemvalue="TestNG.testUserFlow.testAddNewPet" />
       <item itemvalue="TestNG.testUsers" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/Anna_Sakiv/IdeaProjects/SQE_SA/uitestng.xml" />
         <item itemvalue="TestNG.testPets" />
+        <item itemvalue="TestNG.testUserFlow.testAddNewPet" />
         <item itemvalue="TestNG.testPets.testAddNewPet" />
         <item itemvalue="TestNG.testUsers" />
-        <item itemvalue="TestNG.testPets.testDeletePet" />
-        <item itemvalue="TestNG.testPets.testUpdatePhoto" />
       </list>
     </recent_temporary>
   </component>
@@ -465,7 +484,15 @@
       <option name="project" value="LOCAL" />
       <updated>1695984872426</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Monday">
+      <option name="closed" value="true" />
+      <created>1696362297091</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1696362297091</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -500,7 +527,8 @@
     <MESSAGE value="All done" />
     <MESSAGE value="today" />
     <MESSAGE value="Friday" />
-    <option name="LAST_COMMIT_MESSAGE" value="Friday" />
+    <MESSAGE value="Monday" />
+    <option name="LAST_COMMIT_MESSAGE" value="Monday" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

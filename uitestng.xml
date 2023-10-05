@@ -4,13 +4,13 @@
     <listeners>
         <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
     </listeners>
-    <parameter name="allure.results.directory" value="C:\Users\Anna_Sakiv\IdeaProjects\AllureResults"/>
+<!--    <parameter name="allure.results.directory" value="C:\Users\Anna_Sakiv\IdeaProjects\AllureResults"/>-->
 
     <test name="Test">
         <classes>
             <class name="tests.testUserLogin"/>
             <class name="tests.testGeneralSettings"/>
-<!--            <class name="tests.testCRUDDashboard"/>-->
+            <class name="tests.testCRUDDashboard"/>
         </classes>
     </test>
 </suite>
