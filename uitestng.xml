@@ -1,16 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="SmokeTesting">
+<suite name="SmokeTesting" parallel="tests" thread-count="2">
     <listeners>
         <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
     </listeners>
-<!--    <parameter name="allure.results.directory" value="C:\Users\Anna_Sakiv\IdeaProjects\AllureResults"/>-->
 
-    <test name="Test">
+    <test name="Test Chrome">
+        <parameter name="browser" value="chrome" />
         <classes>
             <class name="tests.testUserLogin"/>
-            <class name="tests.testGeneralSettings"/>
-            <class name="tests.testCRUDDashboard"/>
+<!--            <class name="tests.testGeneralSettings"/>-->
+<!--            <class name="tests.testCRUDDashboard"/>-->
         </classes>
     </test>
+    <test name="Test Firefox">
+        <parameter name="browser" value="firefox" />
+        <classes>
+            <class name="tests.testUserLogin"/>
+<!--            <class name="tests.testGeneralSettings"/>-->
+<!--            <class name="tests.testCRUDDashboard"/>-->
+        </classes>
+    </test>
+
 </suite>

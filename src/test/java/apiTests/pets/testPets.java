@@ -17,7 +17,7 @@ public class testPets extends BasePets {
     private ApiBodyBuilder api;
     private CreatePets createPets;
     private Long petID;
-    private String  json = "src/main/java/core/payload/pets.json";
+    private String json = "src/main/java/core/payload/pets.json";
 
     @BeforeMethod
     public void initializePage() {
@@ -30,7 +30,7 @@ public class testPets extends BasePets {
 
     @Test(dataProvider = "petData", dataProviderClass = DP.class)
     public void testAddNewPet(String name, String status, List<String> photoUrls) {
-        createPets.setNameStatus(name, status);
+        createPets.setNameStatusPhoto(name, status, photoUrls);
         String response = api.post(PetsConfig.createUpdatePets(), createPets);
         ApiAssertions.assertJsonField(response, "name", name);
     }
@@ -47,7 +47,7 @@ public class testPets extends BasePets {
     public void testUpdateNameStatus() {
         List<String> photoUrls = new ArrayList<>();
         photoUrls.add("url1");
-        String response = api.put(PetsConfig.createUpdatePets(), json, petID,"Buddy Updated", "Updated", photoUrls);
+        String response = api.put(PetsConfig.createUpdatePets(), json, petID, "Buddy Updated", "Updated", photoUrls);
         ApiAssertions.assertJsonField(response, "name", "Buddy Updated");
         ApiAssertions.assertJsonField(response, "status", "Updated");
     }
@@ -56,7 +56,7 @@ public class testPets extends BasePets {
     public void testUpdatePhoto() {
         List<String> photoUrls = new ArrayList<>();
         photoUrls.add("urlUpdate");
-        String response = api.put(PetsConfig.createUpdatePets(), json,petID,"Buddy Updated", "Updated", photoUrls);
+        String response = api.put(PetsConfig.createUpdatePets(), json, petID, "Buddy Updated", "Updated", photoUrls);
         System.out.println("id: " + petID);
         ApiAssertions.assertJsonField(response, "name", "Buddy Updated");
         ApiAssertions.assertJsonField(response, "status", "Updated");
@@ -68,7 +68,7 @@ public class testPets extends BasePets {
         String deleteUrl = url + petID;
         Response response = api.delete(deleteUrl);
         int actualStatusCode = response.getStatusCode();
-        ApiAssertions.assertResponseCode(actualStatusCode,200);
+        ApiAssertions.assertResponseCode(actualStatusCode, 200);
     }
 
 
