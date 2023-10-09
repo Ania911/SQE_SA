@@ -19,6 +19,10 @@ public class PetsConfig {
         return getString("createUser");
     }
 
+    public static String createUserList() {
+        return getString("createUserList");
+    }
+
     public static String loginUser() {
         return getString("login");
     }

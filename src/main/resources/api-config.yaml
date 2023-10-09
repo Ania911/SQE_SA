@@ -15,5 +15,6 @@ base: https://petstore.swagger.io/v2
 createPets: /pet
 deletePets: /pet/
 createUser: /user
-login: /user/login?
+createUserList: /user/createWithList
+login: /user/login??username=
 logout: /user/logout

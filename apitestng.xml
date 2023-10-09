@@ -8,10 +8,10 @@
 
     <test name="Test">
         <classes>
-            <class name="apiTests.userController.testUsers"/>
             <class name="apiTests.healthCheck.testHealthCheck"/>
+            <class name="apiTests.userController.testUsers"/>
             <class name="apiTests.pets.testPets"/>
-            <class name="apiTests.pets.testUserFlow"/>
+            <class name="apiTests.pets.testUsers"/>
         </classes>
     </test>
 </suite>

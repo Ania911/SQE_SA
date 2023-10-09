@@ -35,6 +35,21 @@ public class ApiBodyBuilder {
         return response.getBody().asString();
     }
 
+
+    public Response generalPost(String endpoint, Object requestBodyObject) {
+        RequestSpecification requestSpec = createRequestSpec();
+        ObjectMapper objectMapper = new ObjectMapper();
+        // Serialize the requestBodyObject to JSON
+        String requestBodyJson;
+        try {
+            requestBodyJson = objectMapper.writeValueAsString(requestBodyObject);
+        } catch (Exception e) {
+            throw new RuntimeException("Error converting object to JSON: " + e.getMessage(), e);
+        }
+        requestSpec.body(requestBodyJson);
+        Response response = requestSpec.when().post(endpoint);
+        return response;
+    }
     public String postJson(String endpoint, String filePath, String newName, String status, List<String> photoUrls) {
         // Update and convert the object to JSON
         String requestBodyJson = PetJsonUtils.readAndUpdateToJson(filePath, petId, newName, status, photoUrls);
@@ -82,6 +97,11 @@ public class ApiBodyBuilder {
     public Response delete(String endpoint) {
         RequestSpecification requestSpec = createRequestSpec();
         return requestSpec.when().delete(endpoint);
+    }
+    public String get(String endpoint) {
+        RequestSpecification requestSpec = createRequestSpec();
+        Response response = requestSpec.when().get(endpoint);
+        return response.getBody().asString();
     }
 
     private Long extractResponseId(Response response) {

@@ -67,7 +67,7 @@ public class testPets extends BasePets {
         String url = PetsConfig.deletePets();
         String deleteUrl = url + petID;
         Response response = api.delete(deleteUrl);
-        int actualStatusCode = response.getStatusCode();
+        Integer actualStatusCode = response.getStatusCode();
         ApiAssertions.assertResponseCode(actualStatusCode, 200);
     }
 

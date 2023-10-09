@@ -19,7 +19,7 @@ public class BaseConfigReader {
             InputStream inputStream = getClass().getClassLoader().getResourceAsStream(configFile);
             if (inputStream != null) {
                 config = yaml.load(inputStream);
-                Log.info("UI Configuration loaded successfully");
+                Log.info("Configuration loaded successfully");
             } else {
                 Log.error("Configuration file '" + configFile + "' not found");
             }
