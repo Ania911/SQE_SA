@@ -34,6 +34,9 @@ public class UIConfig {
     public static String getLoginPage() {
         return getString("loginPage");
     }
+    public static String getMainPage() {
+        return getString("mainPage");
+    }
 
     public static String getSettingsPage() {
         return getString("settingsPage");

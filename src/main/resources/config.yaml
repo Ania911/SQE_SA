@@ -19,3 +19,5 @@ other_settings:
   timeout: 30 # Default timeout for WebDriver operations
   log_level: INFO # Logging level for your tests (e.g., INFO, DEBUG)
 
+# Test  Configuration
+mainPage: https://www.epam.com

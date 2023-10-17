@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -74,9 +75,23 @@ public class BasePage {
         return findElement(locator);
     }
 
+    public WebElement moveToElement(By locator) {
+        WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+        Actions actions = new Actions(driver);
+        actions.moveToElement(element).perform();
+        return element;
+    }
+
     public String getTextByLocator(By locator) {
         WebElement element = findElementWithWait(locator);
         String text = element.getText();
+        System.out.println("The text is: " + text);
+        return text;
+    }
+
+    public String getTextByAttribute (By locator) {
+        WebElement element = findElementWithWait(locator);
+        String text = element.getAttribute("alt");
         System.out.println("The text is: " + text);
         return text;
     }
@@ -90,6 +105,7 @@ public class BasePage {
         List<WebElement> elements = driver.findElements(locator);
         return !elements.isEmpty();
     }
+
 
 
 

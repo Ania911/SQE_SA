@@ -15,6 +15,11 @@ public class Assertion {
         Assert.assertEquals(actual, expected, error);
     }
 
+    public void assertAttributePresent(By locator, String expected, String error) {
+        String actual = basePage.getTextByAttribute(locator);
+        Assert.assertEquals(actual, expected, error);
+    }
+
     public void assertElementPresent(By locator, String error) {
         Boolean actual = basePage.isElementPresent(locator);
         Assert.assertTrue(actual, error);
