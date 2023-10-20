@@ -1,9 +1,7 @@
 package apiTests;
 
 import core.configuration.ApiConfig;
-import core.uttility.RequestBodyBuilder;
 import io.restassured.RestAssured;
-import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -13,7 +11,7 @@ import java.util.Map;
 import static core.uttility.RequestBodyBuilder.buildTokenRequestBody;
 import static io.restassured.RestAssured.given;
 
-public class BaseApiTest {
+public class BaseReportPortal {
     protected String authToken;
     protected ApiConfig apiConfig;
 

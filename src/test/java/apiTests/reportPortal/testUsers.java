@@ -1,6 +1,6 @@
-package apiTests.userController;
+package apiTests.reportPortal;
 
-import apiTests.BaseApiTest;
+import apiTests.BaseReportPortal;
 import core.assertion.ApiAssertions;
 import core.uttility.ApiMethods;
 import org.testng.annotations.BeforeMethod;
@@ -10,7 +10,7 @@ import java.util.Map;
 
 import static core.uttility.RequestBodyBuilder.buildUserRequestBody;
 
-public class testUsers extends BaseApiTest {
+public class testUsers extends BaseReportPortal {
     private ApiMethods apiMethod;
 
     @BeforeMethod

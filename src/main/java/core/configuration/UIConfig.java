@@ -37,6 +37,12 @@ public class UIConfig {
     public static String getMainPage() {
         return getString("mainPage");
     }
+    public static String getResearchPage() {
+        return getString("researchPage");
+    }
+    public static String getUrlLink() {
+        return getString("urlLink");
+    }
 
     public static String getSettingsPage() {
         return getString("settingsPage");

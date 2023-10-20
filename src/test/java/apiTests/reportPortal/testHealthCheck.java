@@ -1,12 +1,12 @@
-package apiTests.healthCheck;
+package apiTests.reportPortal;
 
-import apiTests.BaseApiTest;
+import apiTests.BaseReportPortal;
 import core.assertion.ApiAssertions;
 import core.uttility.ApiMethods;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class testHealthCheck extends BaseApiTest {
+public class testHealthCheck extends BaseReportPortal {
     private ApiMethods apiMethod;
 
     @BeforeMethod

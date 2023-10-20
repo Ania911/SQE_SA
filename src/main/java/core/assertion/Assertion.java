@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 import org.testng.Assert;
 import pages.BasePage;
 
+import java.io.File;
+
 public class Assertion {
     private BasePage basePage;
 
@@ -23,6 +25,12 @@ public class Assertion {
     public void assertElementPresent(By locator, String error) {
         Boolean actual = basePage.isElementPresent(locator);
         Assert.assertTrue(actual, error);
+    }
+
+    public void assertDownloadedFile(File downloadedFile, String expectedFileName) {
+        Assert.assertTrue(downloadedFile.exists(), "Downloaded file should exist");
+        String actualFileName = downloadedFile.getName();
+        Assert.assertEquals(actualFileName, expectedFileName, "File name does not match the expected file name");
     }
 
 

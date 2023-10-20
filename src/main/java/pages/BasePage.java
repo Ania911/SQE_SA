@@ -1,10 +1,7 @@
 package pages;
 
 import core.uttility.Log;
-import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -12,11 +9,13 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
 import java.time.Duration;
+import java.util.ArrayList;
 import java.util.List;
 
 public class BasePage {
     private WebDriver driver;
     private WebDriverWait wait;
+    private List<String> policyItems = new ArrayList<>();
 
     public BasePage(WebDriver driver) {
         this.driver = driver;
@@ -27,6 +26,7 @@ public class BasePage {
         WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
         element.clear();
         element.sendKeys(text);
+        element.sendKeys(Keys.ENTER);
     }
 
     public void clickButton(By locator) {
@@ -82,6 +82,27 @@ public class BasePage {
         return element;
     }
 
+    public void scrollToBottom() {
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+    }
+
+    public void getListItems(List<String> expectedPolicyItems, By locators) {
+        List<WebElement> policyLinks = driver.findElements(locators);
+
+        // Extract the text of the policy links and add them to the list
+        for (WebElement link : policyLinks) {
+            policyItems.add(link.getText());
+        }
+
+        // Compare the extracted policy items with the expected items
+        for (String expectedItem : expectedPolicyItems) {
+            if (!policyItems.contains(expectedItem)) {
+                Assert.assertTrue(policyItems.contains(expectedItem), "Expected item not found: " + expectedItem);
+            }
+        }
+    }
+
     public String getTextByLocator(By locator) {
         WebElement element = findElementWithWait(locator);
         String text = element.getText();
@@ -92,6 +113,13 @@ public class BasePage {
     public String getTextByAttribute (By locator) {
         WebElement element = findElementWithWait(locator);
         String text = element.getAttribute("alt");
+        System.out.println("The text is: " + text);
+        return text;
+    }
+
+    public String getTextByAttribute (By locator, String attribute) {
+        WebElement element = findElementWithWait(locator);
+        String text = element.getAttribute(attribute);
         System.out.println("The text is: " + text);
         return text;
     }
