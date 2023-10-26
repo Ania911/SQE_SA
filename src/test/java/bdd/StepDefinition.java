@@ -87,12 +87,12 @@ public class StepDefinition extends BaseTest {
     @When("user checks validation for required fields:")
     public void user_check_validation_for_required_fields(List<String> requiredFields) {
         openPage.clickButton(Locators.contact);
-        openPage.checkFieldsAreRequired(requiredFields);
+        openPage.requiredFields(requiredFields);
     }
 
     @Then("required fields should be marked as required")
     public void required_fields_marked_as_required() {
-        Assert.assertTrue(true, "Error");
+        Assert.assertTrue(true, "The required fields are not marked as required");
     }
 
     @When("user clicks on the company logo on the header")

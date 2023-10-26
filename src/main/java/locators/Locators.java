@@ -16,5 +16,38 @@ public class Locators {
     public static By searchResult = By.xpath("//h2[contains(., $searchTerm)]");
     public static By contact = By.xpath("(//span[@class='cta-button__text'])[2]");
     public static By companyLogo = By.xpath("//a[@class=\"header__logo-container desktop-logo\"]");
+    // demoWebShop locators
+    // Fill in the registration form
+    public static By firstNameField = By.xpath("//input[@id='FirstName']");
+    public static By lastNameField = By.xpath("//input[@id='LastName']");
+    public static By emailField = By.xpath("//input[@id='Email']");
+    public static By passwordField = By.xpath("//input[@id='Password']");
+    public static By confirmPasswordField = By.xpath("//input[@id='ConfirmPassword']");
+    // Submit the registration form
+    public static By registerButton = By.xpath("//input[@id='register-button']");
+    public static By confirmRegistration = By.xpath("//div[@class='result' and contains(text(), 'Your registration completed')]");
+    //User Login
+    public static By userEmail = By.xpath("//input[@id='Email']");
+    public static By userPass = By.xpath("//input[@id='Password']");
+    public static By loginButton = By.xpath("//input[@value='Log in']");
+    public static By logOutButton = By.xpath("//a[text() = 'Log out']");
+    public static By computersGroup = By.xpath("//a[contains(text(),'Computers')]");
+    public static By computersSubGroups  = By.xpath("//ul[@class='sublist']//li/a");
+    public static By computersSortOrder  = By.xpath("//select[@id='products-orderby']");
+    public static By productTitle  = By.xpath("//select[@id='products-orderby']/option[@selected]");
+    public static By selectNumberPerPage  = By.xpath("//select[@id='products-pagesize']");
+    public static By numberPerPage  = By.xpath("//select[@id='products-pagesize']/option[@selected]");
+    public static By productGrid  = By.xpath("//div[@class='product-grid']");
+    public static By productItems  = By.xpath("//div[@class='product-grid']//div[contains(@class, 'product-item')]");
+    public static By addToCart  = By.xpath("//input[@class='button-1 add-to-cart-button' and @value='Add to cart']");
+    public static By shoppingCardItems  = By.xpath("//span[@class='cart-qty']");
+    public static By shoppingCard  = By.xpath("//span[@class='cart-label'][.='Shopping cart']");
+    public static By removeCheckBox  = By.xpath("//input[@type='checkbox']");
+    public static By updateCard  = By.xpath("//input[contains(@class, 'update-cart-button')]");
+    public static By emptyShoppingCart  = By.xpath("//div[@class='order-summary-content']");
+
+
+
+
 
 }

@@ -1,6 +1,5 @@
 package pages;
 
-import core.uttility.Log;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -34,9 +33,14 @@ public class BasePage {
         element.click();
     }
 
-    public void selectByValue(By locator, String options) {
+    public void selectByValue(By locator, String value) {
         Select dropdownOptions = new Select(driver.findElement(locator));
-        dropdownOptions.selectByValue(options);
+        dropdownOptions.selectByValue(value);
+    }
+
+    private String getSelectedValue(By locator) {
+        Select dropdownOptions = new Select(driver.findElement(locator));
+        return dropdownOptions.getFirstSelectedOption().getText();
     }
 
     public void selectByVisibleText(By locator, String options) {
@@ -70,8 +74,12 @@ public class BasePage {
         return driver.findElement(locator);
     }
 
+    public List<WebElement> findElements(By locator) {
+        return driver.findElements(locator);
+    }
+
     public WebElement findElementWithWait(By locator) {
-        waitForVisibilityOfElement(locator, 10);
+        waitForVisibilityOfElement(locator, 15);
         return findElement(locator);
     }
 
@@ -110,14 +118,14 @@ public class BasePage {
         return text;
     }
 
-    public String getTextByAttribute (By locator) {
+    public String getTextByAttribute(By locator) {
         WebElement element = findElementWithWait(locator);
         String text = element.getAttribute("alt");
         System.out.println("The text is: " + text);
         return text;
     }
 
-    public String getTextByAttribute (By locator, String attribute) {
+    public String getTextByAttribute(By locator, String attribute) {
         WebElement element = findElementWithWait(locator);
         String text = element.getAttribute(attribute);
         System.out.println("The text is: " + text);
@@ -134,7 +142,17 @@ public class BasePage {
         return !elements.isEmpty();
     }
 
+    public void selectRandomItem(By productGridLocator, By randomProductItem) {
+        WebElement productGrid = driver.findElement(productGridLocator);
+        WebElement randomProduct = getRandomProductItem(productGrid, randomProductItem);
+        randomProduct.click();
+    }
 
+    private WebElement getRandomProductItem(WebElement productGrid, By locator) {
+        List<WebElement> productItems = productGrid.findElements(locator);
+        int randomIndex = (int) (Math.random() * productItems.size());
+        return productItems.get(randomIndex);
+    }
 
 
 }

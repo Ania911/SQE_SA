@@ -48,17 +48,20 @@ public class MainPage extends BasePage {
         return this;
     }
     @Step("Ask form required fields")
-    public void checkFieldsAreRequired(List<String> fieldNames) {
+    public Boolean requiredFields(List<String> fieldNames) {
         for (String fieldName : fieldNames) {
             By fieldLocator = By.xpath("//input[@name='" + fieldName + "']");
             String ariaRequired = getTextByAttribute(fieldLocator, "aria-required");
 
             if ("true".equals(ariaRequired)) {
                 System.out.println("The " + fieldName + " field is required.");
+                return true;
             } else {
                 System.out.println("The " + fieldName + " field is not required.");
+                return false;
             }
         }
+        return null;
     }
 
 }
