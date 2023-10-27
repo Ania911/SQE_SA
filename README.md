@@ -15,5 +15,6 @@ This is a Java-based test automation framework that provides a structured approa
 - Supports both web application and RESTful API testing.
 - Combines BDD and a simple approach for writing Selenium test cases.
 - Utilizes Rest Assured with Jackson ObjectMapper for API testing.
+- Employs a Data Provider for dynamic and flexible test data management.
 - Generates detailed and interactive reports using Allure, including attachments for failed test cases.
 ### ![image](https://github.com/Ania911/SQE_SA/assets/45621716/86f8088c-f4b7-4a6c-8135-7bef795e2c04)
