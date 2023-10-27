@@ -1,0 +1,31 @@
+# Selenium Configuration
+browser: chrome # web browser (e.g., chrome, firefox)
+browserSize: maximized
+chromeOptions: "--start-maximized --disable-extensions --disable-popup-blocking"
+firefoxOptions: "--start-maximized --disable-extensions --disable-popup-blocking"
+
+# Users
+username: default
+password: 1q2w3e
+
+# Test Environment Configuration
+envName: https://demo.reportportal.io/ui # Name of the test environment
+loginPage: https://demo.reportportal.io/ui/#login
+settingsPage: https://demo.reportportal.io/ui/#default_personal/settings/general
+dashboardPage: https://demo.reportportal.io/ui/#default_personal/dashboard
+
+# Other Configuration Settings
+other_settings:
+  timeout: 30 # Default timeout for WebDriver operations
+  log_level: INFO # Logging level for your tests (e.g., INFO, DEBUG)
+
+# Test  Configuration
+mainPage: https://www.epam.com
+researchPage: https://www.epam.com/insights/research/how-retail-banks-and-other-financial-institutions-can-master-the-complexities-of-the-cloud
+urlLink: https://www.epam.com/content/dam/epam/free_library/How_Retail_Banks_and_Financial_Institutions_Can_Master_the_Complexities_of_the_Cloud.pdf
+
+# demoWebShop
+registerPage: https://demowebshop.tricentis.com/register
+userLoginPage: https://demowebshop.tricentis.com/login
+computerPage: https://demowebshop.tricentis.com/computers
+desktopPage: https://demowebshop.tricentis.com/desktops

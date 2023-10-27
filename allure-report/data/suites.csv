@@ -1,0 +1,6 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Thu Oct 05 09:50:31 EEST 2023","Thu Oct 05 09:50:32 EEST 2023","1363","SmokeTesting","Test","tests.testUserLogin","tests.testUserLogin","testUserLogin","testUserLogin",""
+"broken","Thu Oct 05 09:51:42 EEST 2023","Thu Oct 05 09:52:12 EEST 2023","30046","SmokeTesting","Test","tests.testCRUDDashboard","tests.testCRUDDashboard","testEditDashboard","testEditDashboard",""
+"broken","Thu Oct 05 09:50:36 EEST 2023","Thu Oct 05 09:51:06 EEST 2023","30025","SmokeTesting","Test","tests.testGeneralSettings","tests.testGeneralSettings","testEditSettings","testEditSettings",""
+"broken","Thu Oct 05 09:52:13 EEST 2023","Thu Oct 05 09:52:43 EEST 2023","30016","SmokeTesting","Test","tests.testCRUDDashboard","tests.testCRUDDashboard","testWDeleteDashboard","testWDeleteDashboard",""
+"broken","Thu Oct 05 09:51:10 EEST 2023","Thu Oct 05 09:51:42 EEST 2023","31864","SmokeTesting","Test","tests.testCRUDDashboard","tests.testCRUDDashboard","testEddDashboard","testEddDashboard",""

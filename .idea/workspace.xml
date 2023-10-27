@@ -4,12 +4,74 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0b8a42de-fa6b-41d2-94db-bd0a72da76cc" name="Changes" comment="updates">
+    <list default="true" id="0b8a42de-fa6b-41d2-94db-bd0a72da76cc" name="Changes" comment="Add screenshot to failed test cases">
+      <change afterPath="$PROJECT_DIR$/allure-report/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/data/attachments/44945a64fee5569d.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/data/attachments/55f9ae2a317d8cc0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/data/attachments/865ee56a8b5d29a7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/data/attachments/df6786ae70a3d8b9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/data/behaviors.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/data/behaviors.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/data/categories.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/data/categories.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/data/packages.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/data/suites.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/data/suites.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/data/test-cases/18d005783adc5b57.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/data/test-cases/217a4fb431060c3a.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/data/test-cases/279cbc200d8338b.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/data/test-cases/28e32c95e2eae92e.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/data/test-cases/408c197b82ed8685.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/data/test-cases/7547f4c71a663de7.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/data/test-cases/79ccfd08510212b0.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/data/test-cases/a283b9255cc0d659.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/data/test-cases/e82bbced7acc8726.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/data/test-cases/edb677d0c2ce5c24.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/data/timeline.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/export/influxDbData.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/export/mail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/export/prometheusData.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/history/categories-trend.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/history/duration-trend.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/history/history-trend.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/history/history.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/history/retry-trend.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/plugins/behaviors/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/plugins/packages/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/plugins/screen-diff/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/plugins/screen-diff/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/widgets/behaviors.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/widgets/categories-trend.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/widgets/categories.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/widgets/duration-trend.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/widgets/duration.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/widgets/environment.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/widgets/executors.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/widgets/history-trend.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/widgets/launch.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/widgets/retry-trend.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/widgets/severity.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/widgets/status-chart.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/widgets/suites.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/allure-report/widgets/summary.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/apiTests/pets/testUsers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sqe/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/testUserLogin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/testUserLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/utils/Log.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sqe/example/uttility/Log.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apitestng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/apitestng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log4j2-sample-2023-09-29.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log4j2-sample-2023-10-01.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/assertion/ApiAssertions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/assertion/ApiAssertions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/configuration/BaseConfigReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/configuration/BaseConfigReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/configuration/PetsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/configuration/PetsConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/dataProvider/DP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/dataProvider/DP.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/core/uttility/ApiBodyBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/core/uttility/ApiBodyBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/petstore/CreateUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/petstore/CreateUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/api-config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/api-config.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/apiTests/BaseApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/apiTests/BaseApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/apiTests/pets/testPets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/apiTests/pets/testPets.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/apiTests/pets/testUserFlow.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +81,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -26,7 +89,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="task_2" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -47,35 +110,45 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="importingSettings">
-      <MavenImportingSettings>
-        <option name="workspaceImportEnabled" value="true" />
-      </MavenImportingSettings>
-    </option>
-  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2U1MNqiZEye3DHmDTQEFIFsPial" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;last_directory_selection&quot;: &quot;C:/Users/Anna_Sakiv/IdeaProjects/SQE_SA/src/test/java&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Anna_Sakiv/IdeaProjects/reportportal&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Anna_Sakiv/IdeaProjects/selenium-tests&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Anna_Sakiv\IdeaProjects\SQE_SA\src\main\java" />
-      <recent name="C:\Users\Anna_Sakiv\IdeaProjects\SQE_SA" />
+      <recent name="C:\Users\Anna_Sakiv\IdeaProjects\SQE_SA\src\main\resources" />
+      <recent name="C:\Users\Anna_Sakiv\IdeaProjects\SQE_SA\src\test\resources" />
+      <recent name="C:\Users\Anna_Sakiv\IdeaProjects\SQE_SA\src\sqe" />
+      <recent name="C:\Users\Anna_Sakiv\IdeaProjects\SQE_SA\src\sqe\resources" />
+      <recent name="C:\Users\Anna_Sakiv\IdeaProjects\SQE_SA\src\sqe\core\logic" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="interfaces.api" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -83,35 +156,10 @@
       <command value="mvn clean test -Denv=qa" />
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.testUserLogin.userLogin">
-    <configuration name="SQE_SA [surefire:test]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
-      <MavenSettings>
-        <option name="myGeneralSettings" />
-        <option name="myRunnerSettings" />
-        <option name="myRunnerParameters">
-          <MavenRunnerParameters>
-            <option name="profiles">
-              <set />
-            </option>
-            <option name="goals">
-              <list>
-                <option value="surefire:test" />
-              </list>
-            </option>
-            <option name="pomFileName" value="pom.xml" />
-            <option name="profilesMap">
-              <map />
-            </option>
-            <option name="resolveToWorkspace" value="false" />
-            <option name="workingDirPath" value="$PROJECT_DIR$" />
-          </MavenRunnerParameters>
-        </option>
-      </MavenSettings>
-      <method v="2" />
-    </configuration>
-    <configuration name="C:/Users/Anna_Sakiv/IdeaProjects/SQE_SA/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.C:/Users/Anna_Sakiv/IdeaProjects/SQE_SA/apitestng.xml">
+    <configuration name="C:/Users/Anna_Sakiv/IdeaProjects/SQE_SA/apitestng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SQE_SA" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/apitestng.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -119,16 +167,69 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testUserLogin" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="testCRUDDashboard" type="TestNG" nameIsGenerated="true">
       <module name="SQE_SA" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="tests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="SUITE_NAME" value="" />
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.testUserLogin" />
+      <option name="MAIN_CLASS_NAME" value="tests.testCRUDDashboard" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2" />
+    </configuration>
+    <configuration name="testHealthCheck.testHCheck" type="TestNG" nameIsGenerated="true">
+      <module name="SQE_SA" />
+      <shortenClasspath name="NONE" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="apiTests.BaseApiTest" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="apiTests" />
+      <option name="MAIN_CLASS_NAME" value="apiTests.healthCheck.testHealthCheck" />
+      <option name="METHOD_NAME" value="testHCheck" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testUsers (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SQE_SA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="apiTests.userController.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="apiTests.userController" />
+      <option name="MAIN_CLASS_NAME" value="apiTests.userController.testUsers" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -136,17 +237,34 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testUserLogin.user" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="testUsers" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SQE_SA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.*" />
+          <option name="PATTERN" value="apiTests.pets.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.testUserLogin" />
-      <option name="METHOD_NAME" value="user" />
+      <option name="PACKAGE_NAME" value="apiTests.pets" />
+      <option name="MAIN_CLASS_NAME" value="apiTests.pets.testUsers" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testUsers.testCreateUserList" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SQE_SA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="apiTests.pets.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="apiTests.pets" />
+      <option name="MAIN_CLASS_NAME" value="apiTests.pets.testUsers" />
+      <option name="METHOD_NAME" value="testCreateUserList" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -154,17 +272,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testUserLogin.userLogin" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="testUsers.testGetUserRegistration" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SQE_SA" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="tests.*" />
+          <option name="PATTERN" value="apiTests.userController.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.testUserLogin" />
-      <option name="METHOD_NAME" value="userLogin" />
+      <option name="PACKAGE_NAME" value="apiTests.userController" />
+      <option name="MAIN_CLASS_NAME" value="apiTests.userController.testUsers" />
+      <option name="METHOD_NAME" value="testGetUserRegistration" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -172,13 +290,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="TestNG.testCRUDDashboard" />
+      <item itemvalue="TestNG.testHealthCheck.testHCheck" />
+      <item itemvalue="TestNG.C:/Users/Anna_Sakiv/IdeaProjects/SQE_SA/apitestng.xml" />
+      <item itemvalue="TestNG.testUsers" />
+      <item itemvalue="TestNG.testUsers (1)" />
+      <item itemvalue="TestNG.testUsers.testCreateUserList" />
+      <item itemvalue="TestNG.testUsers.testGetUserRegistration" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.testUserLogin.userLogin" />
-        <item itemvalue="TestNG.testUserLogin" />
-        <item itemvalue="Maven.SQE_SA [surefire:test]" />
-        <item itemvalue="TestNG.C:/Users/Anna_Sakiv/IdeaProjects/SQE_SA/testng.xml" />
-        <item itemvalue="TestNG.testUserLogin.user" />
+        <item itemvalue="TestNG.C:/Users/Anna_Sakiv/IdeaProjects/SQE_SA/apitestng.xml" />
+        <item itemvalue="TestNG.testUsers (1)" />
+        <item itemvalue="TestNG.testUsers.testGetUserRegistration" />
+        <item itemvalue="TestNG.testUsers" />
+        <item itemvalue="TestNG.testUsers.testCreateUserList" />
       </list>
     </recent_temporary>
   </component>
@@ -212,12 +339,246 @@
       <option name="project" value="LOCAL" />
       <updated>1692775448747</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="task 3">
+      <created>1693421422048</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1693421422048</updated>
+    </task>
+    <task id="LOCAL-00005" summary="task 3">
+      <option name="closed" value="true" />
+      <created>1693484260019</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1693484260019</updated>
+    </task>
+    <task id="LOCAL-00006" summary="task 3">
+      <option name="closed" value="true" />
+      <created>1693489808447</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1693489808447</updated>
+    </task>
+    <task id="LOCAL-00007" summary="task 3">
+      <option name="closed" value="true" />
+      <created>1693817355210</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1693817355210</updated>
+    </task>
+    <task id="LOCAL-00008" summary="task 3">
+      <option name="closed" value="true" />
+      <created>1693856947408</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1693856947408</updated>
+    </task>
+    <task id="LOCAL-00009" summary="task 3">
+      <option name="closed" value="true" />
+      <created>1693987877968</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1693987877968</updated>
+    </task>
+    <task id="LOCAL-00010" summary="task 3">
+      <option name="closed" value="true" />
+      <created>1694091725238</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1694091725239</updated>
+    </task>
+    <task id="LOCAL-00011" summary="task 3">
+      <option name="closed" value="true" />
+      <created>1694175801924</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1694175801924</updated>
+    </task>
+    <task id="LOCAL-00012" summary="task 3">
+      <option name="closed" value="true" />
+      <created>1694176270322</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1694176270322</updated>
+    </task>
+    <task id="LOCAL-00013" summary="task 3">
+      <option name="closed" value="true" />
+      <created>1694425397923</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1694425397923</updated>
+    </task>
+    <task id="LOCAL-00014" summary="almost done">
+      <option name="closed" value="true" />
+      <created>1694508438633</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1694508438633</updated>
+    </task>
+    <task id="LOCAL-00015" summary="done, ready for review">
+      <option name="closed" value="true" />
+      <created>1694511300439</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1694511300439</updated>
+    </task>
+    <task id="LOCAL-00016" summary="friday fixes">
+      <option name="closed" value="true" />
+      <created>1694791520198</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1694791520198</updated>
+    </task>
+    <task id="LOCAL-00017" summary="monday fixes">
+      <option name="closed" value="true" />
+      <created>1695032488632</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1695032488632</updated>
+    </task>
+    <task id="LOCAL-00018" summary="monday fixes">
+      <option name="closed" value="true" />
+      <created>1695046273994</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1695046273994</updated>
+    </task>
+    <task id="LOCAL-00019" summary="All fixes">
+      <option name="closed" value="true" />
+      <created>1695207556044</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1695207556044</updated>
+    </task>
+    <task id="LOCAL-00020" summary="All done">
+      <option name="closed" value="true" />
+      <created>1695211344352</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1695211344352</updated>
+    </task>
+    <task id="LOCAL-00021" summary="All done">
+      <option name="closed" value="true" />
+      <created>1695213336414</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1695213336414</updated>
+    </task>
+    <task id="LOCAL-00022" summary="All done">
+      <option name="closed" value="true" />
+      <created>1695372800790</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1695372800790</updated>
+    </task>
+    <task id="LOCAL-00023" summary="today">
+      <option name="closed" value="true" />
+      <created>1695911628995</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1695911628995</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Friday">
+      <option name="closed" value="true" />
+      <created>1695984872426</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1695984872426</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Monday">
+      <option name="closed" value="true" />
+      <created>1696362297091</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1696362297091</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Add screenshot to failed test cases">
+      <option name="closed" value="true" />
+      <created>1696488914069</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1696488914069</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Add screenshot to failed test cases">
+      <option name="closed" value="true" />
+      <created>1696492730281</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1696492730281</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="executable:docker" />
+    <option featureType="dependencySupport" implementationName="java:org.seleniumhq.selenium:selenium-java" />
+    <option featureType="dependencySupport" implementationName="java:javax.persistence:javax.persistence-api" />
+    <option featureType="dependencySupport" implementationName="executable:kubectl" />
+    <option featureType="dependencySupport" implementationName="java:io.qameta.allure:allure-java-commons" />
+    <option featureType="dependencySupport" implementationName="java:javax.enterprise:cdi-api" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="first commit" />
     <MESSAGE value="updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="updates" />
+    <MESSAGE value="task 3" />
+    <MESSAGE value="almost done" />
+    <MESSAGE value="done, ready for review" />
+    <MESSAGE value="friday fixes" />
+    <MESSAGE value="monday fixes" />
+    <MESSAGE value="All fixes" />
+    <MESSAGE value="All done" />
+    <MESSAGE value="today" />
+    <MESSAGE value="Friday" />
+    <MESSAGE value="Monday" />
+    <MESSAGE value="yAdd screenshot to failed test cases" />
+    <MESSAGE value="Add screenshot to failed test cases" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add screenshot to failed test cases" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pages/BasePage.java</url>
+          <line>78</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

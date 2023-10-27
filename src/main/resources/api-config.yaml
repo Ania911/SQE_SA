@@ -1,0 +1,20 @@
+# Token
+token: https://demo.reportportal.io/uat/sso/oauth/token
+# Base URL
+baseURI: https://demo.reportportal.io
+healthCheck: /health
+user: default
+pass: 1q2w3e
+# User Controller
+getAdminUser: /api/v1/user/superadmin
+getUserRegistration: /api/v1/user/registration?uuid=1
+getUser: /api/v1/user
+exportAllUsers: /api/v1/user/export?view=csv
+#Pets
+base: https://petstore.swagger.io/v2
+createPets: /pet
+deletePets: /pet/
+createUser: /user
+createUserList: /user/createWithList
+login: /user/login??username=
+logout: /user/logout
