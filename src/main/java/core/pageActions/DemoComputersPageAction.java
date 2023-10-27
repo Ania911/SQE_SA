@@ -63,4 +63,10 @@ public class DemoComputersPageAction extends DemoComputersPage {
         clickRemoveCheckBox();
         clickUpdateCard();
     }
+
+    public void checkoutItems() {
+        clickShoppingCard();
+        clickAgreementCheckbox();
+        clickCheckoutButton();
+    }
 }

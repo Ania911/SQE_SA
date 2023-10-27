@@ -8,15 +8,17 @@
     <test name="Test Chrome">
         <parameter name="browser" value="chrome" />
         <classes>
+            <class name="tests.demoWebShop.testUserRegistration"/>
+            <class name="tests.demoWebShop.testUserRegistration"/>
             <class name="tests.testUserLogin"/>
-<!--            <class name="tests.testGeneralSettings"/>-->
-<!--            <class name="tests.testCRUDDashboard"/>-->
+            <class name="tests.testGeneralSettings"/>
+            <class name="tests.testCRUDDashboard"/>
         </classes>
     </test>
     <test name="Test Firefox">
         <parameter name="browser" value="firefox" />
         <classes>
-            <class name="tests.testUserLogin"/>
+<!--            <class name="tests.testUserLogin"/>-->
 <!--            <class name="tests.testGeneralSettings"/>-->
 <!--            <class name="tests.testCRUDDashboard"/>-->
         </classes>

@@ -22,6 +22,11 @@ public class DemoComputersPage extends BasePage {
         return this;
     }
 
+    public DemoComputersPage clickComputerPage() {
+        clickButton(locators.computersPage);
+        return this;
+    }
+
     public List<WebElement> getComputerSubGroup() {
         return findElements(locators.computersSubGroups);
     }
@@ -40,6 +45,7 @@ public class DemoComputersPage extends BasePage {
         clickButton(locators.addToCart);
         return this;
     }
+
     public DemoComputersPage clickRemoveCheckBox() {
         clickButton(locators.removeCheckBox);
         return this;
@@ -52,6 +58,16 @@ public class DemoComputersPage extends BasePage {
 
     public DemoComputersPage clickShoppingCard() {
         clickButton(locators.shoppingCard);
+        return this;
+    }
+
+    public DemoComputersPage clickAgreementCheckbox() {
+        clickButton(locators.agreementCheckBox);
+        return this;
+    }
+
+    public DemoComputersPage clickCheckoutButton() {
+        clickButton(locators.checkoutButton);
         return this;
     }
 

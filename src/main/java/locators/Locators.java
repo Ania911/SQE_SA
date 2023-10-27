@@ -31,23 +31,24 @@ public class Locators {
     public static By userPass = By.xpath("//input[@id='Password']");
     public static By loginButton = By.xpath("//input[@value='Log in']");
     public static By logOutButton = By.xpath("//a[text() = 'Log out']");
+    public static By computersPage = By.xpath("(//a[contains(text(), 'Computers')])[1]");
     public static By computersGroup = By.xpath("//a[contains(text(),'Computers')]");
-    public static By computersSubGroups  = By.xpath("//ul[@class='sublist']//li/a");
-    public static By computersSortOrder  = By.xpath("//select[@id='products-orderby']");
-    public static By productTitle  = By.xpath("//select[@id='products-orderby']/option[@selected]");
-    public static By selectNumberPerPage  = By.xpath("//select[@id='products-pagesize']");
-    public static By numberPerPage  = By.xpath("//select[@id='products-pagesize']/option[@selected]");
-    public static By productGrid  = By.xpath("//div[@class='product-grid']");
-    public static By productItems  = By.xpath("//div[@class='product-grid']//div[contains(@class, 'product-item')]");
-    public static By addToCart  = By.xpath("//input[@class='button-1 add-to-cart-button' and @value='Add to cart']");
-    public static By shoppingCardItems  = By.xpath("//span[@class='cart-qty']");
-    public static By shoppingCard  = By.xpath("//span[@class='cart-label'][.='Shopping cart']");
-    public static By removeCheckBox  = By.xpath("//input[@type='checkbox']");
-    public static By updateCard  = By.xpath("//input[contains(@class, 'update-cart-button')]");
-    public static By emptyShoppingCart  = By.xpath("//div[@class='order-summary-content']");
-
-
-
+    public static By computersSubGroups = By.xpath("//ul[@class='sublist']//li/a");
+    public static By computersSortOrder = By.xpath("//select[@id='products-orderby']");
+    public static By productTitle = By.xpath("//select[@id='products-orderby']/option[@selected]");
+    public static By selectNumberPerPage = By.xpath("//select[@id='products-pagesize']");
+    public static By numberPerPage = By.xpath("//select[@id='products-pagesize']/option[@selected]");
+    public static By productGrid = By.xpath("//div[@class='product-grid']");
+    public static By productItems = By.xpath("//div[@class='product-grid']//div[contains(@class, 'product-item')]");
+    public static By addToCart = By.xpath("//input[@class='button-1 add-to-cart-button' and @value='Add to cart']");
+    public static By shoppingCardItems = By.xpath("//span[@class='cart-qty']");
+    public static By shoppingCard = By.xpath("//span[@class='cart-label'][.='Shopping cart']");
+    public static By removeCheckBox = By.xpath("//input[@type='checkbox']");
+    public static By updateCard = By.xpath("//input[contains(@class, 'update-cart-button')]");
+    public static By emptyShoppingCart = By.xpath("//div[@class='order-summary-content']");
+    public static By agreementCheckBox = By.xpath("//input[@name='termsofservice' and @type='checkbox']");
+    public static By checkoutButton = By.xpath("//button[@type='submit' and @name='checkout']");
+    public static By guestCheckoutButton = By.xpath("//input[@type='button' and @value='Checkout as Guest']");
 
 
 }

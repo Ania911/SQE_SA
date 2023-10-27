@@ -25,6 +25,7 @@ public class testComputersTab extends BaseTest {
     @Test()
     @DisplayName("Verify that ‘Computers’ group has 3 sub-groups with correct names")
     public void testComputerGroups() {
+        computerPage.clickComputerPage();
         List<WebElement> category = computerPage.getComputerCategory();
         String[] expectedCategoryNames = {"Desktops", "Notebooks", "Accessories"};
         assertion.assertSubGroups(category, 3, expectedCategoryNames);
@@ -33,6 +34,7 @@ public class testComputersTab extends BaseTest {
     @Test(dataProvider = "sortingOptions", dataProviderClass = DP.class)
     @DisplayName("Verify that allows sorting items (different options)")
     public void testSortingOptions(String sortingOptions) {
+        computerPage.clickComputerPage();
         computerPage.clickRandomCategoryLink();
         computerPage.sortItems(sortingOptions);
         assertion.assertTextPresent(Locators.productTitle, sortingOptions, "Wrong sorting options");
@@ -69,8 +71,8 @@ public class testComputersTab extends BaseTest {
     public void testCheckOutItem() {
         computerPage.clickRandomCategoryLink();
         computerPage.selectRandomItemAndAddToCart(Locators.productGrid, Locators.productItems);
-        assertion.assertTextPresent(Locators.emptyShoppingCart,"Your Shopping Cart is empty!","Error");
+        computerPage.checkoutItems();
+        assertion.assertElementPresent(Locators.guestCheckoutButton, "Element not found");
     }
-
 
 }

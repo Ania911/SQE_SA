@@ -45,6 +45,7 @@ public class BaseTest {
 
     @AfterTest
     public void tearDown() {
-        driver.quit();
+        if (driver != null)
+            driver.quit();
     }
 }
